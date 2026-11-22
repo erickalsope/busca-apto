@@ -27,3 +27,7 @@
 2026-11-22 Ajuste geral. Comparação de endereço entre fontes passou a ignorar acento e prefixo (Rua, Av.) e código do anunciante passou a casar quando um nome de imobiliária contém o outro. Base refeita do zero com scripts/rebuild.sh.
 2026-11-22 Lopes. Segunda leva registrada, +50 imóveis. Pausa combinada em 270. Ficam 15 anúncios da Lopes coletados aguardando.
 2026-11-22 Lopes restante registrado (+15). Prohabitar registrado (+5).
+2026-11-22 Atualização. Colunas novas preenchidas nos 290 imóveis a partir do JSON ou do texto de cada anúncio (scripts/enrich.py). Dados lidos no navegador e salvos em arquivos na pasta Downloads do Erick (raw/enrich_*.json). Coordenadas vêm do JSON do QuintoAndar, do mapa do ZAP, do mapa da Lopes, das variáveis do Imovelweb e do cadastro da Prohabitar. Nenhuma coordenada estimada.
+2026-11-22 Atualização. 58 anúncios do QuintoAndar não têm texto livre. Para eles a descrição gravada é o resumo da própria página (meta description).
+2026-11-22 Atualização. Itens indisponíveis do QuintoAndar (marcados como Não no anúncio) foram para itens_ausentes. No Arbo (Prohabitar) a lista de comodidades não marcadas não foi usada por ser o catálogo geral do site.
+2026-11-22 Vila Alexandria e Vila Sofia incluídas nos bairros.

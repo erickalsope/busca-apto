@@ -13,3 +13,4 @@ python3 scripts/process_iw.py raw/iw_bairros.txt $D $L | head -1
 python3 scripts/process_lopes.py raw/lopes_bairros.txt raw/lopes_fix.txt $D $L | head -1
 python3 scripts/process_qa.py raw/prohabitar.txt $D $L | head -1
 python3 scripts/finalize.py
+python3 scripts/enrich.py $D raw/enrich_quintoandar.json raw/enrich_lopes.json raw/enrich_zap.json raw/enrich_imovelweb.json raw/enrich_prohabitar.json
