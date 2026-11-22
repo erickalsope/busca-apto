@@ -80,6 +80,7 @@ def main():
             continue
         (qid, tipo, rua, bairro, rent, condo, ctype, iptu, itype, seg, taxa, tsite, area, beds,
          suites, baths, park, floor, furn, pets, amen, inst, nfot, og, status, pub) = f[:26]
+        extra_obs = f[29] if len(f) >= 30 and f[29] else ''
         fonte, link, codigo = (f[26], f[27], f[28]) if len(f) >= 29 else ('QuintoAndar', f'https://www.quintoandar.com.br/imovel/{qid}', qid)
         if link in by_link:
             by_link[link]['data_ultima_verificacao'] = hoje
@@ -87,7 +88,7 @@ def main():
             continue
         rent, condo, iptu, seg, taxa, area = map(num, (rent, condo, iptu, seg, taxa, area))
         beds_n = num(beds)
-        obs = []
+        obs = [extra_obs] if extra_obs else []
         if ctype == 'IncluidoNoAluguel':
             condo = 0.0
             obs.append('condomínio incluso no aluguel ou inexistente')
