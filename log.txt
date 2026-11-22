@@ -31,3 +31,4 @@
 2026-11-22 Atualização. 58 anúncios do QuintoAndar não têm texto livre. Para eles a descrição gravada é o resumo da própria página (meta description).
 2026-11-22 Atualização. Itens indisponíveis do QuintoAndar (marcados como Não no anúncio) foram para itens_ausentes. No Arbo (Prohabitar) a lista de comodidades não marcadas não foi usada por ser o catálogo geral do site.
 2026-11-22 Vila Alexandria e Vila Sofia incluídas nos bairros.
+2026-11-22 CASA192. Site Kenlo, lista por https://www.casa192.com/imoveis/para-alugar/sao-paulo/[bairro] (e ?pagina=2). Condomínio e IPTU só aparecem com a página renderizada, então cada anúncio foi aberto num iframe da própria página. 91 vistos, 9 fora dos bairros, 46 fora do critério no card, 5 já na base, 31 abertos, 24 salvos, 3 ligados a imóveis já salvos, 4 descartados (3 por valor e 1 sem bairro lido, AP16191).

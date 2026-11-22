@@ -309,3 +309,30 @@ id_imovel;fonte;anunciante;codigo_anunciante;link;aluguel_anunciado;status_link;
 289;Prohabitar;Prohabitar Imóveis;AP6522_PROHAB;https://www.prohabitar.com.br/imovel/apartamento/locacao/sao-paulo/sp/interlagos/AP6522_PROHAB;3400;ativo;2026-11-22;2026-11-22
 290;Prohabitar;Prohabitar Imóveis;CA5379_PROHAB;https://www.prohabitar.com.br/imovel/casa/locacao/sao-paulo/sp/jardim-marajoara/CA5379_PROHAB;3900;ativo;2026-11-22;2026-11-22
 290;Prohabitar;Prohabitar Imóveis;SO5937_PROHAB;https://www.prohabitar.com.br/imovel/sobrado/locacao/sao-paulo/sp/jardim-marajoara/SO5937_PROHAB;4200;ativo;2026-11-22;2026-11-22
+291;CASA192;CASA 192 IMÓVEIS;AP28801;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-75-m/AP28801-REH;5000;ativo;2026-11-22;2026-11-22
+292;CASA192;CASA 192 IMÓVEIS;AP27610;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-74-m/AP27610-REH;3300;ativo;2026-11-22;2026-11-22
+293;CASA192;CASA 192 IMÓVEIS;AP25296;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-70-m/AP25296-REH;5500;ativo;2026-11-22;2026-11-22
+294;CASA192;CASA 192 IMÓVEIS;AP18787;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-70-m/AP18787-REH;3300;ativo;2026-11-22;2026-11-22
+295;CASA192;CASA 192 IMÓVEIS;AP1784;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-65-m/AP1784-REH;3500;ativo;2026-11-22;2026-11-22
+296;CASA192;CASA 192 IMÓVEIS;AP0911;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-70-m/AP0911-REH;3800;ativo;2026-11-22;2026-11-22
+297;CASA192;CASA 192 IMÓVEIS;AP7945;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-120-m/AP7945-REH;5900;ativo;2026-11-22;2026-11-22
+298;CASA192;CASA 192 IMÓVEIS;AP28496;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-90-m/AP28496-REH;4500;ativo;2026-11-22;2026-11-22
+299;CASA192;CASA 192 IMÓVEIS;AP0985;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-65-m/AP0985-REH;3350;ativo;2026-11-22;2026-11-22
+300;CASA192;CASA 192 IMÓVEIS;CA2320;https://www.casa192.com/imovel/casa-sao-paulo-3-quartos-220-m/CA2320-REH;6500;ativo;2026-11-22;2026-11-22
+301;CASA192;CASA 192 IMÓVEIS;CA1118;https://www.casa192.com/imovel/casa-sao-paulo-2-quartos-150-m/CA1118-REH;7000;ativo;2026-11-22;2026-11-22
+302;CASA192;CASA 192 IMÓVEIS;AP26985;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-69-m/AP26985-REH;6500;ativo;2026-11-22;2026-11-22
+303;CASA192;CASA 192 IMÓVEIS;AP19707;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-65-m/AP19707-REH;2800;ativo;2026-11-22;2026-11-22
+304;CASA192;CASA 192 IMÓVEIS;AP27821;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-86-m/AP27821-REH;6000;ativo;2026-11-22;2026-11-22
+38;CASA192;CASA 192 IMÓVEIS;AP28706;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-65-m/AP28706-REH;3500;ativo;2026-11-22;2026-11-22
+305;CASA192;CASA 192 IMÓVEIS;AP28598;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-61-m/AP28598-REH;6300;ativo;2026-11-22;2026-11-22
+306;CASA192;CASA 192 IMÓVEIS;AP12952;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-68-m/AP12952-REH;3400;ativo;2026-11-22;2026-11-22
+307;CASA192;CASA 192 IMÓVEIS;AP28369;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-83-m/AP28369-REH;5500;ativo;2026-11-22;2026-11-22
+308;CASA192;CASA 192 IMÓVEIS;AP26298;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-69-m/AP26298-REH;4550;ativo;2026-11-22;2026-11-22
+309;CASA192;CASA 192 IMÓVEIS;AP16213;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-60-m/AP16213-REH;3300;ativo;2026-11-22;2026-11-22
+310;CASA192;CASA 192 IMÓVEIS;AP28727;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-92-m/AP28727-REH;4500;ativo;2026-11-22;2026-11-22
+310;CASA192;CASA 192 IMÓVEIS;AP28599;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP28599-REH;4500;ativo;2026-11-22;2026-11-22
+311;CASA192;CASA 192 IMÓVEIS;AP18543;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-66-m/AP18543-REH;5550;ativo;2026-11-22;2026-11-22
+312;CASA192;CASA 192 IMÓVEIS;AP16459;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-66-m/AP16459-REH;4700;ativo;2026-11-22;2026-11-22
+313;CASA192;CASA 192 IMÓVEIS;AP24516;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-60-m/AP24516-REH;3400;ativo;2026-11-22;2026-11-22
+310;CASA192;CASA 192 IMÓVEIS;AP0784;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP0784-REH;4400;ativo;2026-11-22;2026-11-22
+314;CASA192;CASA 192 IMÓVEIS;CA2248;https://www.casa192.com/imovel/casa-sao-paulo-2-quartos-250-m/CA2248-REH;7000;ativo;2026-11-22;2026-11-22
