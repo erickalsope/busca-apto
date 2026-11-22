@@ -543,9 +543,9 @@ const OPEN=new Set();
    Com config.js, fica no Firestore do projeto busca-apto e o que um marca o outro vê na hora.
    Não há login. O site é usado só pelo Erick e pela Amanda. */
 const FBC=window.APTO_FIREBASE||{};
-const REMOTO=!!(FBC.apiKey&&FBC.projectId&&window.firebase&&window.firebase.firestore);
+let REMOTO=!!(FBC.apiKey&&FBC.projectId&&window.firebase&&window.firebase.firestore);
 const ST={fav:new Set(),disc:new Set(),notas:{}};
-let DB=null,pend=false;
+let DB=null,pend=false,MODO=REMOTO?'fs':'';
 const tNota={};
 const temFav=id=>ST.fav.has(id);
 const notaTxt=id=>ST.notas[id]?.texto||'';
@@ -559,32 +559,37 @@ function salvarLocal(){
   LS.set('notes',Object.fromEntries(Object.entries(ST.notas).filter(([,v])=>v.texto.trim()).map(([k,v])=>[k,v.texto])));
 }
 function pintar(){if(document.activeElement?.matches?.('textarea[data-note]')){pend=true;return}render()}
-const quando=v=>v&&v.toDate?v.toDate():null;
-function iniciarRemoto(){
-  try{firebase.initializeApp(FBC);DB=firebase.firestore()}catch(e){toast('Não consegui conectar ao banco. Os favoritos ficam só neste navegador.');return}
+const quando=v=>!v?null:v.toDate?v.toDate():new Date(v);
+const lerSnap=q=>(Array.isArray(q)?q:(q?.docs||[])).map(d=>({id:d.id??d.key,x:typeof d.data==='function'?d.data():(d.data??{})}));
+const grava=(f,o)=>Promise.resolve().then(f).catch(e=>toast(`Não consegui salvar ${o}. `+(/grant|writer|permiss/i.test(e?.message||e)?'Peça ao Erick acesso de edição na página.':(e?.message||''))));
+function assinar(){
   const erro=e=>toast('Não consegui ler os favoritos agora. '+(e?.message||''));
-  DB.collection('favoritos').onSnapshot(q=>{ST.fav=new Set(q.docs.map(d=>d.id));pintar()},erro);
-  DB.collection('descartes').onSnapshot(q=>{ST.disc=new Set(q.docs.map(d=>d.id));pintar()},erro);
-  DB.collection('notas').onSnapshot(q=>{ST.notas={};q.docs.forEach(d=>{const x=d.data();ST.notas[d.id]={texto:x.texto||'',em:quando(x.atualizado_em)}});pintar()},erro);
+  DB.collection('favoritos').onSnapshot(q=>{ST.fav=new Set(lerSnap(q).map(d=>d.id));pintar()},erro);
+  DB.collection('descartes').onSnapshot(q=>{ST.disc=new Set(lerSnap(q).map(d=>d.id));pintar()},erro);
+  DB.collection('notas').onSnapshot(q=>{ST.notas={};lerSnap(q).forEach(d=>ST.notas[d.id]={texto:d.x.texto||'',em:quando(d.x.atualizado_em)});pintar()},erro);
 }
-const agora=()=>firebase.firestore.FieldValue.serverTimestamp();
+function iniciarRemoto(){
+  try{firebase.initializeApp(FBC);DB=firebase.firestore()}catch(e){REMOTO=false;toast('Não consegui conectar ao banco. Os favoritos ficam só neste navegador.');return}
+  assinar();
+}
+const agora=()=>MODO==='fs'?firebase.firestore.FieldValue.serverTimestamp():new Date().toISOString();
 function alternaFav(id){
   const tinha=ST.fav.has(id);tinha?ST.fav.delete(id):ST.fav.add(id);render();
   if(!REMOTO)return salvarLocal();
   const ref=DB.collection('favoritos').doc(id);
-  (tinha?ref.delete():ref.set({criado_em:agora()})).catch(e=>toast('Não consegui salvar o favorito. '+e.message));
+  grava(()=>tinha?ref.delete():ref.set({criado_em:agora()}),'o favorito');
 }
 function alternaDesc(id){
   const tinha=ST.disc.has(id);tinha?ST.disc.delete(id):ST.disc.add(id);render();
   if(!REMOTO)return salvarLocal();
   const ref=DB.collection('descartes').doc(id);
-  (tinha?ref.delete():ref.set({criado_em:agora()})).catch(e=>toast('Não consegui salvar o descarte. '+e.message));
+  grava(()=>tinha?ref.delete():ref.set({criado_em:agora()}),'o descarte');
 }
 function escreveNota(id,v){
   ST.notas[id]={texto:v,em:new Date()};
   if(!REMOTO)return salvarLocal();
   clearTimeout(tNota[id]);
-  tNota[id]=setTimeout(()=>{const ref=DB.collection('notas').doc(id);(v.trim()?ref.set({texto:v.slice(0,4000),atualizado_em:agora()}):ref.delete()).catch(e=>toast('Não consegui salvar a nota. '+e.message))},700);
+  tNota[id]=setTimeout(()=>{const ref=DB.collection('notas').doc(id);grava(()=>v.trim()?ref.set({texto:v.slice(0,4000),atualizado_em:agora()}):ref.delete(),'a nota')},700);
 }
 const save=()=>{LS.set('f2',F);LS.set('s2',S)};
 
@@ -825,6 +830,7 @@ if(!REMOTO)carregarLocal();
   use(EMB,'emb');
 })();
 if(REMOTO)iniciarRemoto();
+else if(window.claude&&window.claude.use)window.claude.use('db').then(d=>{if(!d)return;DB=d;MODO='claude';REMOTO=true;ST.fav=new Set();ST.disc=new Set();ST.notas={};assinar();render()}).catch(()=>{});
 }
 </script>
 </body>
