@@ -80,7 +80,7 @@ def classifica(r, base_row):
     elif vagas and re.search(r'vagas? (de garagem )?descobertas?', t) and not re.search(r'(?<!des)cobert', t):
         out['vagas_cobertas'], out['vagas_descobertas'] = '0', fmt(vagas)
     # aquecimento
-    if re.search(r'aquecedor a gas|aquecimento a gas|aquecimento central|chuveiro a gas|aquecedor de passagem', t):
+    if re.search(r'aquec\w*( de agua)? a gas|aquecimento central|chuveiro a gas|aquecedor de passagem|aquecedor a gas', t):
         out['aquecimento_agua'] = 'gas'
     elif re.search(r'aquec\w* solar', t):
         out['aquecimento_agua'] = 'solar'
