@@ -1,0 +1,4 @@
+# CSVs copiados para dentro de site/ na hora de publicar
+site/*.csv
+# cópia offline gerada por scripts/site_offline.py
+busca-apto-offline.html
