@@ -34,5 +34,8 @@ for line in open(raw, encoding='utf-8'):
                          cod, '. '.join(extra)]))
 tmp = raw + '.conv'
 open(tmp, 'w', encoding='utf-8').write('\n'.join(out) + '\n')
+if os.environ.get('CONVERT_ONLY'):
+    print(tmp)
+    sys.exit(0)
 subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), 'process_qa.py'), tmp, hoje, limite], check=True)
 os.remove(tmp)
