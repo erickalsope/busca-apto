@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Site sem login, usado só pelo Erick e pela Amanda.
+    // Só existem as três coleções abaixo, cada uma com os campos esperados.
+    function idOk(id) {
+      return id.size() <= 12 && id.matches('^[0-9A-Za-z_-]+$');
+    }
+    match /favoritos/{id} {
+      allow read: if true;
+      allow create, update: if idOk(id) && request.resource.data.keys().hasOnly(['criado_em']);
+      allow delete: if idOk(id);
+    }
+    match /descartes/{id} {
+      allow read: if true;
+      allow create, update: if idOk(id) && request.resource.data.keys().hasOnly(['criado_em']);
+      allow delete: if idOk(id);
+    }
+    match /notas/{id} {
+      allow read: if true;
+      allow create, update: if idOk(id)
+        && request.resource.data.keys().hasOnly(['texto', 'atualizado_em'])
+        && request.resource.data.texto is string
+        && request.resource.data.texto.size() <= 4000;
+      allow delete: if idOk(id);
+    }
+  }
+}

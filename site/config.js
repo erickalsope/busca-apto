@@ -1,9 +1,11 @@
-// Endereço e chave pública do projeto busca-apto no Supabase.
-// A chave aqui é a "publishable" (pública). Ela pode ficar no site porque
-// as regras do banco (RLS) só deixam o Erick e a Amanda lerem e gravarem.
-// Nunca coloque aqui a chave secreta (secret ou service_role).
-// Com os dois campos vazios, o site funciona sem login e guarda tudo só no navegador.
-window.APTO_CONFIG = {
-  supabaseUrl: '',
-  supabaseKey: ''
+// Configuração pública do app web do projeto busca-apto no Firebase.
+// Estes valores identificam o projeto e podem ficar no site. Não são senhas.
+// Quem pode ler e gravar é definido pelas regras do Firestore (firestore.rules).
+window.APTO_FIREBASE = {
+  apiKey: "AIzaSyBezkc7lqgpQPMdVFgJJshsnMrzQSCTz9E",
+  authDomain: "busca-apto.firebaseapp.com",
+  projectId: "busca-apto",
+  storageBucket: "busca-apto.firebasestorage.app",
+  messagingSenderId: "773918832581",
+  appId: "1:773918832581:web:160d67903e26a11d0ebdac"
 };

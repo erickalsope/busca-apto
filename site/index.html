@@ -172,18 +172,6 @@ tr.det td{padding:0;background:var(--pri-s)}
 .empty td{padding:48px 16px;text-align:center;white-space:normal;color:var(--mut)}
 .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;z-index:50;max-width:calc(100vw - 32px)}
 body.drag::after{content:"Solte os arquivos CSV aqui";position:fixed;inset:12px;border:3px dashed var(--pri);border-radius:18px;background:rgba(237,240,255,.92);display:grid;place-items:center;font:600 22px "Inter Tight",Inter,sans-serif;color:var(--pri);z-index:60}
-.tag.fav{background:#fff4d6;color:#8a5a00}
-#conta{display:inline-flex;align-items:center;gap:10px}
-.login{position:fixed;inset:0;background:rgba(15,18,28,.42);display:grid;place-items:center;z-index:70;padding:16px}
-.lbox{background:#fff;border-radius:16px;padding:24px;width:min(380px,100%);display:grid;gap:12px;box-shadow:0 18px 48px rgba(15,18,28,.25)}
-.lbox h2{margin:0;font:700 24px/1.1 "Inter Tight",Inter,sans-serif}
-.lbox label{display:grid;gap:4px;font-size:14px;color:var(--mut)}
-.lbox input{height:44px;border:1px solid var(--line);border-radius:10px;padding:0 12px;font-size:16px;color:var(--ink)}
-.lact{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
-.btnp{height:44px;padding:0 20px;border-radius:10px;border:0;background:var(--pri);color:#fff;font-weight:600;cursor:pointer}
-.btnp:disabled{opacity:.6}
-.erro{margin:0;color:var(--bad);font-size:14px}
-textarea[readonly]{background:var(--soft);cursor:pointer}
 @media(max-width:1100px){.detin{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){
 html,body{height:auto}
@@ -228,7 +216,6 @@ tr.det,tr.det td{display:block}
 <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 15V4M7 9l5-5 5 5M5 20h14"/></symbol>
 <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z"/></symbol>
 <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3.5c3.2 4.2 5.7 7.3 5.7 10.3a5.7 5.7 0 0 1-11.4 0c0-3 2.5-6.1 5.7-10.3z"/></symbol>
-<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></symbol>
 <symbol id="i-morro" viewBox="0 0 24 24"><path d="M3 19.5l6.5-10 4 5.5 2.5-3 5 7.5z"/><path d="M14.5 6.5l1.5 1.5M17.5 5l1 2"/></symbol>
 </svg>
 
@@ -238,7 +225,6 @@ tr.det,tr.det td{display:block}
     <p class="sub"><span id="src">Carregando a base.</span>
       <button class="lnk" id="up" type="button"><svg class="i"><use href="#i-up"/></svg>Atualizar base</button>
       <button class="lnk" id="volta" type="button" hidden>Voltar à base original</button>
-      <span id="conta"></span>
       <input type="file" id="file" accept=".csv,text/csv" multiple hidden>
     </p>
     <p class="aviso" id="aviso" hidden>Comércio a pé, segurança da rua e áreas de risco ainda não foram calculados. Por enquanto a nota usa o restante.</p>
@@ -317,19 +303,10 @@ tr.det,tr.det td{display:block}
   <table><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table>
 </main>
 
-<div class="login" id="login" hidden>
-  <form class="lbox" id="fl">
-    <h2>Entrar</h2>
-    <p class="obs">Favoritos, notas e descartes ficam salvos para vocês dois.</p>
-    <label>E-mail<input id="lemail" type="email" autocomplete="username" required></label>
-    <label>Senha<input id="lsenha" type="password" autocomplete="current-password" required></label>
-    <p class="erro" id="lerro" hidden></p>
-    <div class="lact"><button type="button" class="lnk" id="lcancel">Agora não</button><button class="btnp" type="submit" id="lbtn">Entrar</button></div>
-  </form>
-</div>
 
 <script src="config.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore-compat.js"></script>
 <script type="text/plain" id="csv-base">
 __BASE_CSV__
 </script>
@@ -562,95 +539,52 @@ let S=LS.get('s2',{k:'nota',d:-1});
 const OPEN=new Set();
 
 /* ---------- Favoritos, notas e descartes ----------
-   Sem config.js preenchido, tudo fica no navegador.
-   Com config.js, fica no Supabase e o que um marca o outro vê. */
-const CONF=window.APTO_CONFIG||{};
-const CONF_OK=!!(CONF.supabaseUrl&&CONF.supabaseKey);
-const REMOTO=CONF_OK&&!!(window.supabase&&window.supabase.createClient);
-const ST={fav:new Map(),disc:new Set(),notas:{}};
-const MEMB={eu:'Você'};
-let EU=REMOTO?null:{id:'eu',nome:'Você'},SB=null,canal=null,pend=false;
+   Sem config.js preenchido, tudo fica só no navegador.
+   Com config.js, fica no Firestore do projeto busca-apto e o que um marca o outro vê na hora.
+   Não há login. O site é usado só pelo Erick e pela Amanda. */
+const FBC=window.APTO_FIREBASE||{};
+const REMOTO=!!(FBC.apiKey&&FBC.projectId&&window.firebase&&window.firebase.firestore);
+const ST={fav:new Set(),disc:new Set(),notas:{}};
+let DB=null,pend=false;
 const tNota={};
-const meuFav=id=>!!EU&&!!ST.fav.get(id)?.has(EU.id);
-const temFav=id=>(ST.fav.get(id)?.size||0)>0;
-const nFav=()=>[...ST.fav.values()].filter(s=>s.size).length;
-const outrosFav=id=>[...(ST.fav.get(id)||[])].filter(u=>u!==EU?.id).map(u=>MEMB[u]||'outra pessoa');
+const temFav=id=>ST.fav.has(id);
 const notaTxt=id=>ST.notas[id]?.texto||'';
 function carregarLocal(){
-  ST.fav.clear();LS.get('fav',[]).forEach(id=>ST.fav.set(id,new Set(['eu'])));
+  ST.fav=new Set(LS.get('fav',[]));
   ST.disc=new Set(LS.get('disc',[]));
   ST.notas={};Object.entries(LS.get('notes',{})).forEach(([k,v])=>ST.notas[k]={texto:v});
 }
 function salvarLocal(){
-  LS.set('fav',[...ST.fav].filter(([,s])=>s.size).map(([k])=>k));
-  LS.set('disc',[...ST.disc]);
+  LS.set('fav',[...ST.fav]);LS.set('disc',[...ST.disc]);
   LS.set('notes',Object.fromEntries(Object.entries(ST.notas).filter(([,v])=>v.texto.trim()).map(([k,v])=>[k,v.texto])));
 }
 function pintar(){if(document.activeElement?.matches?.('textarea[data-note]')){pend=true;return}render()}
-async function carregarRemoto(){
-  const rs=await Promise.all([SB.from('favoritos').select('id_imovel,usuario'),SB.from('notas').select('id_imovel,texto,atualizado_em,atualizado_por'),SB.from('descartes').select('id_imovel'),SB.from('membros').select('usuario,nome')]);
-  const er=rs.find(r=>r.error);
-  if(er){toast('Não consegui ler os favoritos. '+er.error.message);return}
-  const[f,n,d,m]=rs.map(r=>r.data);
-  m.forEach(r=>MEMB[r.usuario]=r.nome);
-  if(EU)EU.nome=MEMB[EU.id]||EU.email;
-  ST.fav.clear();f.forEach(r=>{if(!ST.fav.has(r.id_imovel))ST.fav.set(r.id_imovel,new Set());ST.fav.get(r.id_imovel).add(r.usuario)});
-  ST.notas={};n.forEach(r=>ST.notas[r.id_imovel]={texto:r.texto,por:r.atualizado_por,em:r.atualizado_em});
-  ST.disc=new Set(d.map(r=>r.id_imovel));
-  pintarConta();pintar();
+const quando=v=>v&&v.toDate?v.toDate():null;
+function iniciarRemoto(){
+  try{firebase.initializeApp(FBC);DB=firebase.firestore()}catch(e){toast('Não consegui conectar ao banco. Os favoritos ficam só neste navegador.');return}
+  const erro=e=>toast('Não consegui ler os favoritos agora. '+(e?.message||''));
+  DB.collection('favoritos').onSnapshot(q=>{ST.fav=new Set(q.docs.map(d=>d.id));pintar()},erro);
+  DB.collection('descartes').onSnapshot(q=>{ST.disc=new Set(q.docs.map(d=>d.id));pintar()},erro);
+  DB.collection('notas').onSnapshot(q=>{ST.notas={};q.docs.forEach(d=>{const x=d.data();ST.notas[d.id]={texto:x.texto||'',em:quando(x.atualizado_em)}});pintar()},erro);
 }
-let tRt;
-const aoMudar=()=>{clearTimeout(tRt);tRt=setTimeout(carregarRemoto,400)};
-async function aoEntrar(s){
-  const uid=s?.user?.id||null;
-  if(uid&&EU?.id===uid)return;
-  if(uid){
-    EU={id:uid,email:s.user.email,nome:s.user.email};
-    if(!canal)canal=SB.channel('apto').on('postgres_changes',{event:'*',schema:'public',table:'favoritos'},aoMudar).on('postgres_changes',{event:'*',schema:'public',table:'notas'},aoMudar).on('postgres_changes',{event:'*',schema:'public',table:'descartes'},aoMudar).subscribe();
-    await carregarRemoto();
-  }else{
-    EU=null;ST.fav.clear();ST.disc.clear();ST.notas={};
-    if(canal){SB.removeChannel(canal);canal=null}
-    render();
-  }
-  pintarConta();
-}
-async function iniciarRemoto(){
-  SB=window.supabase.createClient(CONF.supabaseUrl,CONF.supabaseKey);
-  const{data}=await SB.auth.getSession();
-  await aoEntrar(data.session);
-  SB.auth.onAuthStateChange((ev,s)=>{if(ev==='SIGNED_IN'||ev==='SIGNED_OUT')setTimeout(()=>aoEntrar(s),0)});
-}
-function pintarConta(){
-  const c=$('#conta');
-  if(!CONF_OK){c.innerHTML='';return}
-  if(!REMOTO){c.innerHTML='<span class="tag warn">Login indisponível agora. Favoritos ficam só neste navegador</span>';return}
-  c.innerHTML=EU?`<span class="mut">Conectado como ${esc(EU.nome)}</span><button class="lnk" type="button" id="sair">Sair</button>`:`<button class="lnk" type="button" id="entrar">${ico('i-user')}Entrar para ver os favoritos</button>`;
-}
-function abrirLogin(){$('#login').hidden=false;$('#lerro').hidden=true;setTimeout(()=>$('#lemail').focus(),0)}
-function fecharLogin(){$('#login').hidden=true}
-async function alternaFav(id){
-  if(!EU)return abrirLogin();
-  const s=ST.fav.get(id)||new Set(),meu=s.has(EU.id);
-  meu?s.delete(EU.id):s.add(EU.id);ST.fav.set(id,s);render();
+const agora=()=>firebase.firestore.FieldValue.serverTimestamp();
+function alternaFav(id){
+  const tinha=ST.fav.has(id);tinha?ST.fav.delete(id):ST.fav.add(id);render();
   if(!REMOTO)return salvarLocal();
-  const r=meu?await SB.from('favoritos').delete().match({id_imovel:id,usuario:EU.id}):await SB.from('favoritos').insert({id_imovel:id});
-  if(r.error){toast('Não consegui salvar o favorito. '+r.error.message);carregarRemoto()}
+  const ref=DB.collection('favoritos').doc(id);
+  (tinha?ref.delete():ref.set({criado_em:agora()})).catch(e=>toast('Não consegui salvar o favorito. '+e.message));
 }
-async function alternaDesc(id){
-  if(!EU)return abrirLogin();
-  const tinha=ST.disc.has(id);
-  tinha?ST.disc.delete(id):ST.disc.add(id);render();
+function alternaDesc(id){
+  const tinha=ST.disc.has(id);tinha?ST.disc.delete(id):ST.disc.add(id);render();
   if(!REMOTO)return salvarLocal();
-  const r=tinha?await SB.from('descartes').delete().eq('id_imovel',id):await SB.from('descartes').insert({id_imovel:id});
-  if(r.error){toast('Não consegui salvar o descarte. '+r.error.message);carregarRemoto()}
+  const ref=DB.collection('descartes').doc(id);
+  (tinha?ref.delete():ref.set({criado_em:agora()})).catch(e=>toast('Não consegui salvar o descarte. '+e.message));
 }
 function escreveNota(id,v){
-  if(!EU)return;
-  ST.notas[id]={texto:v,por:EU.id,em:new Date().toISOString()};
+  ST.notas[id]={texto:v,em:new Date()};
   if(!REMOTO)return salvarLocal();
   clearTimeout(tNota[id]);
-  tNota[id]=setTimeout(async()=>{const r=await SB.from('notas').upsert({id_imovel:id,texto:v});if(r.error)toast('Não consegui salvar a nota. '+r.error.message)},700);
+  tNota[id]=setTimeout(()=>{const ref=DB.collection('notas').doc(id);(v.trim()?ref.set({texto:v.slice(0,4000),atualizado_em:agora()}):ref.delete()).catch(e=>toast('Não consegui salvar a nota. '+e.message))},700);
 }
 const save=()=>{LS.set('f2',F);LS.set('s2',S)};
 
@@ -684,14 +618,13 @@ const med=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.lengt
 
 function cell(c,o){const v=c.g(o);return `<td class="${c.cls||''}${c.m?' m':''}" data-l="${c.l}">${v==null&&!c.fa?NA:c.f?c.f(v,o):esc(v)}</td>`}
 function rowHTML(o){
-  const fav=meuFav(o.id),disc=ST.disc.has(o.id),open=OPEN.has(o.id),link=okUrl(o.link_principal)?o.link_principal:'';
+  const fav=temFav(o.id),disc=ST.disc.has(o.id),open=OPEN.has(o.id),link=okUrl(o.link_principal)?o.link_principal:'';
   const tags=[`<span class="tag">${esc(cap(o.tipo))}</span>`,`<span class="tag">#${esc(o.id)}</span>`];
   if(o.indisp)tags.push('<span class="tag bad">Indisponível</span>');
   if(disc)tags.push('<span class="tag bad">Descartado</span>');
   if(o.dup)tags.push(`<span class="tag warn" title="A coleta achou um imóvel parecido">Parecido com #${esc(o.dup)}</span>`);
   o.verif.forEach(v=>tags.push(`<span class="tag warn">Verificar ${esc(v)}</span>`));
   if(o.qtd_anuncios>1)tags.push(`<span class="tag pri">${o.qtd_anuncios} anúncios</span>`);
-  const of=outrosFav(o.id);if(of.length)tags.push(`<span class="tag fav">Favorito ${of.length>1?'de '+esc(of.join(' e ')):(EU?'de '+esc(of[0]):'')}</span>`);
   if(notaTxt(o.id).trim())tags.push('<span class="tag ok">Com nota</span>');
   return `<tr class="row${open?' open':''}${o.indisp||disc?' off':''}" data-id="${esc(o.id)}" tabindex="0" aria-expanded="${open}">${cell(COLS[0],o)}
 <td class="c-foto"><a class="ph"${link?` href="${esc(link)}" target="_blank" rel="noopener"`:''} aria-label="Abrir anúncio">${ico('i-casa','i fb')}${okUrl(o.foto_capa_url)?`<img src="${esc(o.foto_capa_url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:''}${o.qtd_fotos?`<span class="nf">${o.qtd_fotos} fotos</span>`:''}</a></td>
@@ -709,8 +642,8 @@ function calcHTML(o){
 <div class="hd fim"><span>Nota final</span><b>${n.final??'n/i'}</b></div>${n.parcial.length?`<p class="obs">Nota parcial. ${esc(cap(n.parcial.join(', ')))}.</p>`:''}</div>`;
 }
 function detHTML(o){
-  const disc=ST.disc.has(o.id),nt=ST.notas[o.id],trava=!EU;
-  const quem=REMOTO&&nt?.por&&nt.em?`<p class="obs">Última edição de ${esc(MEMB[nt.por]||'alguém')} em ${new Date(nt.em).toLocaleDateString('pt-BR')} às ${new Date(nt.em).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}.</p>`:'';
+  const disc=ST.disc.has(o.id),nt=ST.notas[o.id];
+  const quem=REMOTO&&nt?.em&&nt.texto.trim()?`<p class="obs">Última edição em ${nt.em.toLocaleDateString('pt-BR')} às ${nt.em.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}.</p>`:'';
   const c=[['Aluguel',o.aluguel],['Condomínio',o.condominio],['IPTU',o.iptu_mensal],['Seguro incêndio',o.seguroV]];
   const dl=a=>a.map(([k,v])=>`<dt>${k}</dt><dd>${v==null?NA:brl(v)}</dd>`).join('');
   const ads=o.links.length?o.links.map(l=>{const v=N(l.aluguel_anunciado),on=l.status_link!=='inativo';
@@ -721,7 +654,7 @@ function detHTML(o){
 <section>${calcHTML(o)}</section>
 <section><h4>Custo por mês</h4><dl class="cost">${dl(c)}<dt class="s">Total</dt><dd class="s">${o.total==null?NA:brl(o.total)}</dd>${o.servico!=null?`<dt>Taxa de serviço</dt><dd>${brl(o.servico)}</dd>`:''}</dl><h4>Anúncios deste imóvel</h4><ul class="ads">${ads}</ul></section>
 <section><h4>No imóvel</h4>${tg(o.it)}<h4>No condomínio</h4>${tg(o.lz)}</section>
-<section><h4>Nota de vocês</h4><textarea data-note="${esc(o.id)}" rows="3" placeholder="${trava?'Entre para escrever uma nota':'Ex. ligar para agendar visita no sábado'}"${trava?' readonly':''}>${esc(notaTxt(o.id))}</textarea>${quem}
+<section><h4>Nota de vocês</h4><textarea data-note="${esc(o.id)}" rows="3" placeholder="Ex. ligar para agendar visita no sábado">${esc(notaTxt(o.id))}</textarea>${quem}
 <button class="btn" type="button" data-act="disc">${disc?'Trazer de volta para a lista':'Descartar este imóvel'}</button>
 <h4>Observações da coleta</h4><p class="obs">${esc(o.observacoes)||'Sem observações.'}</p><p class="obs">Coletado em ${dt(o.data_primeira_coleta)}. Verificado em ${dt(o.data_ultima_verificacao)}.</p></section>
 </div></td></tr>`;
@@ -776,7 +709,7 @@ function sync(){
   $$('[data-f]').forEach(el=>{if(el.type==='checkbox')el.checked=!!F[el.dataset.f];else if(el!==document.activeElement)el.value=F[el.dataset.f]});
   $$('[data-preset]').forEach(el=>el.setAttribute('aria-pressed',F.vmax===el.dataset.preset&&F.vmin===''));
   $('#favs').setAttribute('aria-pressed',F.favs);
-  const nf=nFav();$('#favs span').textContent=nf?`Favoritos ${nf}`:'Favoritos';
+  const nf=ST.fav.size;$('#favs span').textContent=nf?`Favoritos ${nf}`:'Favoritos';
   const lab=(id,on,txt)=>{const p=$(id);p.classList.toggle('on',on);p.querySelector('summary span').textContent=txt};
   lab('#p-bairro',F.bairros.length>0,F.bairros.length===1?F.bairros[0]:F.bairros.length?`Bairros ${F.bairros.length}`:'Bairros');
   const hv=F.vmin!==''||F.vmax!=='';
@@ -824,17 +757,8 @@ document.addEventListener('input',e=>{const el=e.target;
   if(el.matches('input[data-f]:not([type=checkbox])')){F[el.dataset.f]=el.value.trim();render()}
   else if(el.matches('textarea[data-note]'))escreveNota(el.dataset.note,el.value);
 });
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){$$('details.pop[open]').forEach(d=>d.open=false);fecharLogin()}});
-document.addEventListener('click',e=>{if(e.target.closest('#entrar'))abrirLogin();else if(e.target.closest('#sair'))SB.auth.signOut()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('details.pop[open]').forEach(d=>d.open=false)});
 document.addEventListener('focusout',e=>{if(pend&&e.target.matches?.('textarea[data-note]')){pend=false;setTimeout(render,300)}});
-$('#lcancel').addEventListener('click',fecharLogin);
-$('#fl').addEventListener('submit',async e=>{
-  e.preventDefault();const b=$('#lbtn');b.disabled=true;
-  const{error}=await SB.auth.signInWithPassword({email:$('#lemail').value.trim(),password:$('#lsenha').value});
-  b.disabled=false;
-  if(error){$('#lerro').textContent='E-mail ou senha não conferem.';$('#lerro').hidden=false;return}
-  $('#lsenha').value='';fecharLogin();
-});
 document.addEventListener('toggle',e=>{const d=e.target;if(!d.matches||!d.matches('details.pop')||!d.open)return;
   $$('details.pop[open]').forEach(x=>{if(x!==d)x.open=false});
   const m=d.querySelector('.menu');m.style.left='';const r=m.getBoundingClientRect();if(r.right>innerWidth-12)m.style.left=(innerWidth-12-r.right)+'px'},true);
@@ -842,8 +766,7 @@ $('#sortk').addEventListener('change',e=>{const c=SORTS.find(x=>x.k===e.target.v
 $('#sortd').addEventListener('click',()=>{S.d=-S.d;render()});
 
 tbody.addEventListener('click',e=>{const t=e.target;
-  if(t.closest('textarea')){if(!EU)abrirLogin();return}
-  if(t.closest('a'))return;
+  if(t.closest('a,textarea'))return;
   const tr=t.closest('tr.row,tr.det'),act=t.closest('[data-act]');
   const id=tr&&(tr.dataset.id||tr.previousElementSibling?.dataset.id);
   if(act&&id){act.dataset.act==='fav'?alternaFav(id):alternaDesc(id);return}
@@ -901,7 +824,6 @@ if(!REMOTO)carregarLocal();
   if(st&&st.base){use(st,'file');return}
   use(EMB,'emb');
 })();
-pintarConta();
 if(REMOTO)iniciarRemoto();
 }
 </script>
