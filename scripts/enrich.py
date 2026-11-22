@@ -211,6 +211,13 @@ def main():
             if passo and lote >= passo:
                 commit(base, bcols, links, dkey, lote, hoje)
                 lote = 0
+    for l in links:
+        if l['fonte'] == 'VivaReal':
+            m = re.search(r'id-(\d+)', l['link'])
+            z = next((x for x in links if x['fonte'] == 'ZAP Imóveis' and m and m.group(1) in x['link']), None)
+            if z and (z['fonte'], z['codigo_anunciante']) in dkey and (l['fonte'], l['codigo_anunciante']) not in dkey:
+                d = dict(dkey[(z['fonte'], z['codigo_anunciante'])]); d['fonte'] = 'VivaReal'
+                dkey[(l['fonte'], l['codigo_anunciante'])] = d
     commit(base, bcols, links, dkey, lote, hoje, push=bool(passo))
     print(json.dumps(dict(imoveis_atualizados=feitos, links_fora_do_ar=len(fora), precos_mudados=mudou)))
     if fora:
@@ -223,6 +230,8 @@ def commit(base, bcols, links, dkey, n, hoje, push=True):
     save(DESC, sorted(dkey.values(), key=lambda d: int(d['id_imovel'])), ['id_imovel', 'fonte', 'codigo_anunciante', 'descricao'])
     if push and n:
         subprocess.run(['git', 'add', '-A'], check=True)
+        if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode == 0:
+            return
         msg = f'atualização {hoje}, colunas novas em {n} imóveis\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FTRWjqJJGBEeq4B2ZB7Bbf'
         subprocess.run(['git', 'commit', '-qm', msg], check=True)
         subprocess.run(['git', '-c', 'push.negotiate=true', 'push', '-q', 'origin', 'main'], check=True)
