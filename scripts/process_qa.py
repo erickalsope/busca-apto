@@ -6,7 +6,7 @@ import csv, json, sys, os, re
 
 BASE = 'base_aptos.csv'
 LINKS = 'links_aptos.csv'
-BASE_COLS = 'id;status;data_primeira_coleta;data_ultima_verificacao;data_indisponivel;qtd_anuncios;imobiliarias;link_principal;foto_capa_url;tipo;bairro;endereco;aluguel;condominio;iptu_mensal;total_mensal;outras_taxas;area_util_m2;valor_m2;quartos;suites;banheiros;vagas;andar;mobiliado;aceita_pet;itens_imovel;lazer_condominio;qtd_fotos;observacoes'.split(';')
+BASE_COLS = 'id;status;data_primeira_coleta;data_ultima_verificacao;data_indisponivel;qtd_anuncios;imobiliarias;link_principal;foto_capa_url;tipo;bairro;endereco;aluguel;condominio;iptu_mensal;total_mensal;outras_taxas;area_util_m2;valor_m2;quartos;suites;banheiros;vagas;andar;mobiliado;aceita_pet;itens_imovel;lazer_condominio;qtd_fotos;observacoes;latitude;longitude;localizacao_precisao;cep;numero;andar_exato;seguro_incendio;taxa_servico;banheiros_sociais;lavabo;banheiro_servico;vagas_cobertas;vagas_descobertas;aquecimento_agua;piso;cozinha;area_servico;seguranca;mercadinho;itens_ausentes'.split(';')
 LINK_COLS = 'id_imovel;fonte;anunciante;codigo_anunciante;link;aluguel_anunciado;status_link;data_primeira_coleta;data_ultima_verificacao'.split(';')
 ACESS = {'corrimão', 'piso tátil', 'rampas de acesso', 'vaga de garagem acessível',
          'quartos e corredores com portas amplas', 'banheiro adaptado'}
@@ -14,7 +14,7 @@ TIPOS = {'Apartamento': 'apartamento', 'Casa': 'casa', 'CasaCondominio': 'casa e
          'StudioOuKitchenette': 'studio'}
 BAIRROS_OK = {'brooklin', 'brooklin paulista', 'brooklin novo', 'campo belo', 'vila mascote',
               'jardim prudência', 'santo amaro', 'alto da boa vista', 'chácara santo antônio',
-              'granja julieta', 'jardim marajoara', 'socorro', 'interlagos'}
+              'granja julieta', 'jardim marajoara', 'socorro', 'interlagos', 'vila alexandria', 'vila sofia'}
 
 
 def load(path, cols):
