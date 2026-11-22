@@ -56,7 +56,9 @@ def lst(s):
 
 
 def norm(s):
-    return (s or '').strip().lower().replace('av. ver.', 'avenida vereador').replace('av. ', 'avenida ')
+    import re
+    s = (s or '').strip().lower().replace('av. ver.', 'avenida vereador').replace('av. ', 'avenida ')
+    return re.sub(r'\s*(,\s*\d+.*|-\s.*)$', '', s).strip()
 
 
 def main():
@@ -78,7 +80,7 @@ def main():
             continue
         (qid, tipo, rua, bairro, rent, condo, ctype, iptu, itype, seg, taxa, tsite, area, beds,
          suites, baths, park, floor, furn, pets, amen, inst, nfot, og, status, pub) = f[:26]
-        link = f'https://www.quintoandar.com.br/imovel/{qid}'
+        fonte, link, codigo = (f[26], f[27], f[28]) if len(f) >= 29 else ('QuintoAndar', f'https://www.quintoandar.com.br/imovel/{qid}', qid)
         if link in by_link:
             by_link[link]['data_ultima_verificacao'] = hoje
             st['ja'] += 1
@@ -94,7 +96,12 @@ def main():
             obs.append('verificar condominio')
         if itype == 'NaoInformado':
             iptu = None
+            if fonte != 'QuintoAndar':
+                pass
             obs.append('verificar iptu')
+        elif itype == 'Anual':
+            iptu = round(num(iptu) / 12, 2) if num(iptu) else None
+            obs.append('iptu convertido de anual')
         elif itype == 'NaoExiste':
             iptu = 0.0
             obs.append('iptu inexistente segundo o anúncio')
@@ -125,13 +132,16 @@ def main():
             obs.append(f'outras_taxas = seguro incêndio {fmt(seg)} + taxa de serviço {fmt(taxa)}')
         try:
             fl = json.loads(floor or '{}')
-            andar = f"{fl['min']}-{fl['max']}" if 'min' in fl else ''
+            andar = f"{fl['min']}-{fl['max']}" if isinstance(fl, dict) and 'min' in fl else (str(fl) if fl not in ({}, '') else '')
         except Exception:
-            andar = ''
-        if andar:
+            andar = floor or ''
+        if andar and '-' in andar:
             obs.append(f'andar informado como faixa {andar}')
         foto = ('https://www.quintoandar.com.br' + og[1:]) if og.startswith('Q') else og
-        anunciante = pub.strip() or 'QuintoAndar'
+        import re as _re
+        anunciante = _re.sub(r'\s*Creci.*$', '', pub).strip() or 'QuintoAndar'
+        if fonte != 'QuintoAndar':
+            obs.append(f'código no {fonte} {qid}')
 
         # dedupe
         match, parcial = None, None
@@ -156,7 +166,7 @@ def main():
             st['desc'] += 1
             desc_motivos.append(f'{qid} limite')
             continue
-        lrow = dict(fonte='QuintoAndar', anunciante=anunciante, codigo_anunciante=qid, link=link,
+        lrow = dict(fonte=fonte, anunciante=anunciante, codigo_anunciante=codigo, link=link,
                     aluguel_anunciado=fmt(rent), status_link='ativo', data_primeira_coleta=hoje,
                     data_ultima_verificacao=hoje)
         if match is not None:
