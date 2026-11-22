@@ -13,3 +13,7 @@
 2026-11-22 ZAP Imóveis. Campo Belo e Brooklin feitos. O teto de 150 imóveis foi atingido no Brooklin. O slug vila-mascote não retornou resultados no ZAP, testar outro formato na próxima rodada.
 2026-11-22 ZAP Imóveis. A meta og:image não existe no ZAP. A foto de capa veio da meta twitter:image, sem os parâmetros de tamanho. A lista de itens do anúncio no ZAP é curta e o lazer do condomínio veio em parte do próprio link do anúncio.
 2026-11-22 ZAP Imóveis. Resumo 102 vistos nas listas, 71 anúncios abertos, 8 salvos, 0 duplicados exatos (5 marcados como possível duplicado), 31 descartados por valor ou área no card e 63 de anunciantes fora da lista.
+2026-11-22 Erick liberou o teto de imóveis. Vale só respeitar os critérios.
+2026-11-22 ZAP Imóveis. Slugs que funcionam sto-amaro, vl-mascote, jd-prudencia, alto-da-boa-vista, granja-julieta, jd-marajoara, socorro, interlagos, campo-belo, brooklin. Chácara Santo Antônio não foi encontrada (chacara-santo-antonio, ch-sto-antonio e chacara-sto-antonio deram 404).
+2026-11-22 ZAP Imóveis. Demais bairros 248 vistos, 213 anúncios abertos, 20 salvos, 1 ligado a imóvel já salvo, 31 descartados pelo card e 192 de anunciantes fora da lista.
+2026-11-22 ZAP Imóveis total da fonte. 350 vistos, 284 abertos, 28 salvos, 1 duplicado, 62 descartados por valor ou área e 255 de anunciantes fora da lista.

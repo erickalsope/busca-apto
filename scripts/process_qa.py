@@ -2,7 +2,7 @@
 """Processa um lote bruto do QuintoAndar (campos separados por §) e atualiza os CSVs.
 Uso: python3 scripts/process_qa.py raw/arquivo.txt AAAA-MM-DD [limite_total]
 """
-import csv, json, sys, os
+import csv, json, sys, os, re
 
 BASE = 'base_aptos.csv'
 LINKS = 'links_aptos.csv'
@@ -145,7 +145,13 @@ def main():
 
         # dedupe
         match, parcial = None, None
-        for b in base:
+        def _an(x):
+            return re.sub(r'[^a-z0-9]', '', re.sub(r'(imóveis|imoveis|imobiliária|imobiliaria|ltda|campo belo)', '', x.lower()))
+        for l in links:
+            if codigo and l['codigo_anunciante'] == codigo and _an(l['anunciante']) == _an(anunciante):
+                match = next((b for b in base if b['id'] == l['id_imovel']), None)
+                break
+        for b in ([] if match else base):
             if norm(b['bairro']) != norm(bairro) or norm(b['endereco']) != norm(rua):
                 continue
             if b['quartos'] != fmt(beds_n):
