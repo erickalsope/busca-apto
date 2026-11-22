@@ -20,10 +20,12 @@ for line in open(raw, encoding='utf-8'):
     m = re.match(r'(.*?)\s+-\s+([^,]+),', addr)
     rua, bairro = (m.group(1), m.group(2)) if m else (addr, '')
     feats = [x for x in itens.split('|') if x]
-    for slugf in re.findall(r'-com-([a-z\-]+?)-(?:campo|brooklin|vila|jardim|santo|alto|chacara|granja|socorro|interlagos)', link):
+    for slugf in re.findall(r'-com-([a-z\-]+?)-(?:campo|brooklin|vila|jardim|santo|alto|chacara|granja|socorro|interlagos|\d+m2)', link):
         f2 = slugf.replace('-', ' ')
         if f2 not in feats and LAZER.search(f2):
             feats.append(f2)
+    if foto.startswith('V/'):
+        foto = 'https://resizedimgs.vivareal.com.br/img/vr-listing/' + foto[2:]
     if foto.startswith('R/'):
         foto = 'https://resizedimgs.zapimoveis.com.br/img/vr-listing/' + foto[2:]
     if link.startswith('/'):
