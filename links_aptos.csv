@@ -175,14 +175,64 @@ id_imovel;fonte;anunciante;codigo_anunciante;link;aluguel_anunciado;status_link;
 170;ZAP Imóveis;RUMO SUL IMÓVEIS;47992;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-mobiliado-jardim-prudencia-zona-sul-sao-paulo-sp-98m2-id-2914377220/;5000;ativo;2026-11-22;2026-11-22
 143;VivaReal;CASA 192 IMÓVEIS;AP22664;https://www.vivareal.com.br/imovel/apartamento-2-quartos-campo-belo-zona-sul-sao-paulo-com-garagem-70m2-aluguel-RS3800-id-2920024513/;3800;ativo;2026-11-22;2026-11-22
 145;VivaReal;CASA 192 IMÓVEIS;AP28792;https://www.vivareal.com.br/imovel/apartamento-2-quartos-campo-belo-zona-sul-sao-paulo-com-garagem-65m2-aluguel-RS3800-id-2922089803/;3800;ativo;2026-11-22;2026-11-22
-171;Imovelweb;RUMO SUL IMÓVEIS;36930;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-prudencia-3051175538.html;4400;ativo;2026-11-22;2026-11-22
+100;Imovelweb;RUMO SUL IMÓVEIS;36930;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-prudencia-3051175538.html;4400;ativo;2026-11-22;2026-11-22
 169;Imovelweb;Scheid Prime;BV9378;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-no-jardim-prudencia-com-73m-3011223538.html;5000;ativo;2026-11-22;2026-11-22
-172;Imovelweb;RUMO SUL IMÓVEIS;38285;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-no-alto-da-boa-vista-3024705826.html;5000;ativo;2026-11-22;2026-11-22
-173;Imovelweb;Scheid Imóveis - Unidade Marajoara;MR103315;https://www.imovelweb.com.br/propriedades/casa-ou-escritorio-a-venda-e-locacao-em-santo-amaro-3014519324.html;6500;ativo;2026-11-22;2026-11-22
-174;Imovelweb;RUMO SUL IMÓVEIS;47370;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-no-jardim-marajoara-3031915324.html;4200;ativo;2026-11-22;2026-11-22
-175;Imovelweb;RUMO SUL IMÓVEIS;47888;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3043989563.html;4600;ativo;2026-11-22;2026-11-22
-176;Imovelweb;RUMO SUL IMÓVEIS;37563;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3051330245.html;3100;ativo;2026-11-22;2026-11-22
-177;Imovelweb;RUMO SUL IMÓVEIS;24988;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3026663045.html;2900;ativo;2026-11-22;2026-11-22
-177;Imovelweb;RUMO SUL IMÓVEIS;32052;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3051777384.html;2822;ativo;2026-11-22;2026-11-22
-178;Imovelweb;LOPES INVEST HOUSE;REO1181483;https://www.imovelweb.com.br/propriedades/sobrado-com-2-quartos-para-locacao-em-interlagos-sp-3035544661.html;3100;ativo;2026-11-22;2026-11-22
-179;Imovelweb;RUMO SUL IMÓVEIS;48141;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-em-interlagos-3051330240.html;4500;ativo;2026-11-22;2026-11-22
+171;Imovelweb;RUMO SUL IMÓVEIS;38285;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-no-alto-da-boa-vista-3024705826.html;5000;ativo;2026-11-22;2026-11-22
+172;Imovelweb;Scheid Imóveis - Unidade Marajoara;MR103315;https://www.imovelweb.com.br/propriedades/casa-ou-escritorio-a-venda-e-locacao-em-santo-amaro-3014519324.html;6500;ativo;2026-11-22;2026-11-22
+173;Imovelweb;RUMO SUL IMÓVEIS;47370;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-no-jardim-marajoara-3031915324.html;4200;ativo;2026-11-22;2026-11-22
+174;Imovelweb;RUMO SUL IMÓVEIS;47888;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3043989563.html;4600;ativo;2026-11-22;2026-11-22
+175;Imovelweb;RUMO SUL IMÓVEIS;37563;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3051330245.html;3100;ativo;2026-11-22;2026-11-22
+176;Imovelweb;RUMO SUL IMÓVEIS;24988;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3026663045.html;2900;ativo;2026-11-22;2026-11-22
+176;Imovelweb;RUMO SUL IMÓVEIS;32052;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3051777384.html;2822;ativo;2026-11-22;2026-11-22
+177;Imovelweb;LOPES INVEST HOUSE;REO1181483;https://www.imovelweb.com.br/propriedades/sobrado-com-2-quartos-para-locacao-em-interlagos-sp-3035544661.html;3100;ativo;2026-11-22;2026-11-22
+178;Imovelweb;RUMO SUL IMÓVEIS;48141;https://www.imovelweb.com.br/propriedades/casa-para-aluguel-em-interlagos-3051330240.html;4500;ativo;2026-11-22;2026-11-22
+179;Lopes;Lopes Ouro;REO129201;https://www.lopes.com.br/imovel/REO129201;6500;ativo;2026-11-22;2026-11-22
+180;Lopes;Lopes Urban;REO923061;https://www.lopes.com.br/imovel/REO923061;5000;ativo;2026-11-22;2026-11-22
+181;Lopes;Lopes Prime – Jardins (Nova);REO534192;https://www.lopes.com.br/imovel/REO534192;8000;ativo;2026-11-22;2026-11-22
+182;Lopes;Lopes MBI;REO654083;https://www.lopes.com.br/imovel/REO654083;3200;ativo;2026-11-22;2026-11-22
+183;Lopes;Lopes Local - Pinheiros;REO129310;https://www.lopes.com.br/imovel/REO129310;7000;ativo;2026-11-22;2026-11-22
+184;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1154482;https://www.lopes.com.br/imovel/REO1154482;5800;ativo;2026-11-22;2026-11-22
+185;Lopes;Lopes Local - Jardim América;REO1198461;https://www.lopes.com.br/imovel/REO1198461;5250;ativo;2026-11-22;2026-11-22
+186;Lopes;Lopes Elite;REO1200761;https://www.lopes.com.br/imovel/REO1200761;4800;ativo;2026-11-22;2026-11-22
+187;Lopes;Lopes Condovel Vila Mariana;REO476196;https://www.lopes.com.br/imovel/REO476196;4500;ativo;2026-11-22;2026-11-22
+188;Lopes;Lopes Urban;REO217250;https://www.lopes.com.br/imovel/REO217250;3590;ativo;2026-11-22;2026-11-22
+189;Lopes;Lopes RTG;REO1007949;https://www.lopes.com.br/imovel/REO1007949;3400;ativo;2026-11-22;2026-11-22
+190;Lopes;Lopes Condessa - Santana;REO252090;https://www.lopes.com.br/imovel/REO252090;5000;ativo;2026-11-22;2026-11-22
+189;Lopes;Lopes Elite;REO769567;https://www.lopes.com.br/imovel/REO769567;3560;ativo;2026-11-22;2026-11-22
+163;Lopes;Lopes Condovel Vila Mariana;REO329319;https://www.lopes.com.br/imovel/REO329319;3000;ativo;2026-11-22;2026-11-22
+191;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO200672;https://www.lopes.com.br/imovel/REO200672;4500;ativo;2026-11-22;2026-11-22
+192;Lopes;Lopes MBI;REO884878;https://www.lopes.com.br/imovel/REO884878;5500;ativo;2026-11-22;2026-11-22
+193;Lopes;Lopes Urban;REO542561;https://www.lopes.com.br/imovel/REO542561;5000;ativo;2026-11-22;2026-11-22
+194;Lopes;Lopes Central e Participações;REO6184;https://www.lopes.com.br/imovel/REO6184;4500;ativo;2026-11-22;2026-11-22
+195;Lopes;Lopes Prime – Moema (Nova);REO591040;https://www.lopes.com.br/imovel/REO591040;5000;ativo;2026-11-22;2026-11-22
+196;Lopes;Lopes Prime – Moema (Nova);REO73946;https://www.lopes.com.br/imovel/REO73946;6500;ativo;2026-11-22;2026-11-22
+197;Lopes;Lopes Prime – Moema (Nova);REO509313;https://www.lopes.com.br/imovel/REO509313;6050;ativo;2026-11-22;2026-11-22
+198;Lopes;Lopes Prime – Jardins (Nova);REO303400;https://www.lopes.com.br/imovel/REO303400;6000;ativo;2026-11-22;2026-11-22
+199;Lopes;Lopes Local - Pinheiros;REO523353;https://www.lopes.com.br/imovel/REO523353;6500;ativo;2026-11-22;2026-11-22
+200;Lopes;Lopes Urban;REO995558;https://www.lopes.com.br/imovel/REO995558;5000;ativo;2026-11-22;2026-11-22
+201;Lopes;Lopes Local - Pinheiros;REO160432;https://www.lopes.com.br/imovel/REO160432;4500;ativo;2026-11-22;2026-11-22
+202;Lopes;Lopes Urban;REO281560;https://www.lopes.com.br/imovel/REO281560;4500;ativo;2026-11-22;2026-11-22
+203;Lopes;Lopes Elite;REO521091;https://www.lopes.com.br/imovel/REO521091;5500;ativo;2026-11-22;2026-11-22
+204;Lopes;Lopes Mobi;REO200557;https://www.lopes.com.br/imovel/REO200557;6000;ativo;2026-11-22;2026-11-22
+205;Lopes;Lopes Urban;REO1094154;https://www.lopes.com.br/imovel/REO1094154;5400;ativo;2026-11-22;2026-11-22
+206;Lopes;Lopes Local - Jardim América;REO304531;https://www.lopes.com.br/imovel/REO304531;5000;ativo;2026-11-22;2026-11-22
+207;Lopes;Lopes Urban;REO707949;https://www.lopes.com.br/imovel/REO707949;5700;ativo;2026-11-22;2026-11-22
+208;Lopes;Lopes Urban;REO207828;https://www.lopes.com.br/imovel/REO207828;4800;ativo;2026-11-22;2026-11-22
+209;Lopes;Lopes Condovel Vila Mariana;REO989106;https://www.lopes.com.br/imovel/REO989106;3500;ativo;2026-11-22;2026-11-22
+210;Lopes;Lopes Prime – Moema (Nova);REO610447;https://www.lopes.com.br/imovel/REO610447;5000;ativo;2026-11-22;2026-11-22
+211;Lopes;Lopes Elite;REO1006207;https://www.lopes.com.br/imovel/REO1006207;6000;ativo;2026-11-22;2026-11-22
+212;Lopes;Lopes Urban;REO57776;https://www.lopes.com.br/imovel/REO57776;7000;ativo;2026-11-22;2026-11-22
+213;Lopes;Lopes Condovel Vila Mariana;REO122629;https://www.lopes.com.br/imovel/REO122629;3200;ativo;2026-11-22;2026-11-22
+214;Lopes;Lopes Prime – Jardins (Nova);REO718319;https://www.lopes.com.br/imovel/REO718319;4200;ativo;2026-11-22;2026-11-22
+215;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO691145;https://www.lopes.com.br/imovel/REO691145;5500;ativo;2026-11-22;2026-11-22
+216;Lopes;Lopes Prime – Moema (Nova);REO589448;https://www.lopes.com.br/imovel/REO589448;6000;ativo;2026-11-22;2026-11-22
+217;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO937019;https://www.lopes.com.br/imovel/REO937019;4300;ativo;2026-11-22;2026-11-22
+218;Lopes;Lopes Urban;REO1198958;https://www.lopes.com.br/imovel/REO1198958;7800;ativo;2026-11-22;2026-11-22
+219;Lopes;Lopes Local - Jardim América;REO984943;https://www.lopes.com.br/imovel/REO984943;5000;ativo;2026-11-22;2026-11-22
+220;Lopes;Lopes Urban;REO314720;https://www.lopes.com.br/imovel/REO314720;7000;ativo;2026-11-22;2026-11-22
+38;Lopes;Lopes Local - Pinheiros;REO1191264;https://www.lopes.com.br/imovel/REO1191264;4900;ativo;2026-11-22;2026-11-22
+41;Lopes;Lopes Condovel Vila Mariana;REO344889;https://www.lopes.com.br/imovel/REO344889;4500;ativo;2026-11-22;2026-11-22
+206;Lopes;Lopes Premier;REO1214918;https://www.lopes.com.br/imovel/REO1214918;5000;ativo;2026-11-22;2026-11-22
+158;Lopes;Lopes Condovel Vila Mariana;REO330487;https://www.lopes.com.br/imovel/REO330487;2500;ativo;2026-11-22;2026-11-22
+156;Lopes;Lopes 8A;REO34015;https://www.lopes.com.br/imovel/REO34015;3900;ativo;2026-11-22;2026-11-22
+177;Lopes;Lopes;REO1181483;https://www.lopes.com.br/imovel/REO1181483;3100;ativo;2026-11-22;2026-11-22

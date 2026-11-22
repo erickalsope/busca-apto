@@ -56,9 +56,13 @@ def lst(s):
 
 
 def norm(s):
-    import re
+    import re, unicodedata
     s = (s or '').strip().lower().replace('av. ver.', 'avenida vereador').replace('av. ', 'avenida ')
-    return re.sub(r'\s*(,\s*\d+.*|-\s.*)$', '', s).strip()
+    s = re.sub(r'\s*(,\s*\d+.*|-\s.*)$', '', s).strip()
+    s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+    s = re.sub(r'^(rua|r\.?|avenida|av\.?|alameda|al\.?|travessa|praca)\s+', '', s)
+    s = s.replace('vereador', 'ver').replace('doutor', 'dr').replace('professor', 'prof')
+    return re.sub(r'\s+', ' ', s).strip()
 
 
 def main():
@@ -121,7 +125,7 @@ def main():
             motivo = 'area'
         elif teto > 8000 or teto < 3000:
             motivo = f'valor {teto:.0f}'
-        elif norm(bairro) not in BAIRROS_OK:
+        elif norm(bairro) not in {norm(x) for x in BAIRROS_OK}:
             motivo = f'bairro {bairro}'
         if motivo:
             st['desc'] += 1
@@ -149,7 +153,8 @@ def main():
         def _an(x):
             return re.sub(r'[^a-z0-9]', '', re.sub(r'(imóveis|imoveis|imobiliária|imobiliaria|ltda|campo belo)', '', x.lower()))
         for l in links:
-            if codigo and l['codigo_anunciante'] == codigo and _an(l['anunciante']) == _an(anunciante):
+            a1, a2 = _an(l['anunciante']), _an(anunciante)
+            if codigo and l['codigo_anunciante'] == codigo and (a1 == a2 or a1 in a2 or a2 in a1):
                 match = next((b for b in base if b['id'] == l['id_imovel']), None)
                 break
         for b in ([] if match else base):
