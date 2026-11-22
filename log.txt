@@ -1,0 +1,11 @@
+2026-11-22 GitHub indisponível (conexão com erickalsope/busca-apto negada). Trabalhando com arquivos locais.
+2026-11-22 Critérios ajustados pelo Erick. Total entre 3000 e 8000, área de 60 m² ou mais, limite de 150 imóveis.
+2026-11-22 QuintoAndar. Formato de URL confirmado https://www.quintoandar.com.br/alugar/imovel/[bairro]-sao-paulo-sp-brasil/de-3000-a-8000-reais/2-quartos/de-60-a-1000-m2 e página 2 com ?pagina=2. O filtro de valor do site é o total com seguro e taxa de serviço.
+2026-11-22 QuintoAndar. Leitura feita pelo JSON da própria página (__NEXT_DATA__) da lista e de cada anúncio, sem abrir galeria nem mapa.
+2026-11-22 QuintoAndar. URLs usadas https://www.quintoandar.com.br/alugar/imovel/[campo-belo|brooklin|vila-mascote|jardim-prudencia|santo-amaro|alto-da-boa-vista|chacara-santo-antonio|granja-julieta|jardim-marajoara|socorro|interlagos]-sao-paulo-sp-brasil/de-3000-a-8000-reais/2-quartos/de-60-a-1000-m2 com páginas 1 e 2 (?pagina=2).
+2026-11-22 QuintoAndar. Os 4 primeiros bairros entraram completos (2 páginas). Nos 7 seguintes o restante do teto de 150 foi dividido em até 7 imóveis por bairro para cobrir a região toda.
+2026-11-22 QuintoAndar. Socorro com o slug socorro-sao-paulo-sp-brasil retornou 0 imóveis. Testar outro formato na próxima rodada.
+2026-11-22 QuintoAndar. Na busca por Alto da Boa Vista e Granja Julieta o site devolve muitos imóveis cadastrados como Santo Amaro. Entraram com o bairro do anúncio.
+2026-11-22 QuintoAndar. Nenhum anúncio de imobiliária parceira apareceu, todos com anunciante QuintoAndar. Itens de acessibilidade (corrimão, piso tátil, rampas) não foram registrados para enxugar as listas.
+2026-11-22 QuintoAndar. Resumo 284 vistos nas listas, 153 anúncios abertos, 142 imóveis salvos, 3 anúncios ligados a imóveis já salvos, 16 repetidos entre bairros, 81 fora dos bairros da lista, 42 não abertos pelo teto.
+2026-11-22 GitHub acessado a pedido do Erick. Arquivos locais enviados para erickalsope/busca-apto.
