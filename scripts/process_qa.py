@@ -79,7 +79,7 @@ def main():
             continue
         f = line.split('§')
         st['lidos'] += 1
-        if len(f) < 26 or f[1] == 'ERRO' or not f[2]:
+        if len(f) < 26 or f[1] == 'ERRO' or (not f[2] and not f[4]):
             st['erro'] += 1
             continue
         (qid, tipo, rua, bairro, rent, condo, ctype, iptu, itype, seg, taxa, tsite, area, beds,

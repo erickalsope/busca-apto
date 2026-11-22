@@ -11,4 +11,5 @@ python3 scripts/process_zap.py raw/zap_demais-bairros.txt $D $L | head -1
 python3 scripts/add_links.py raw/vr_campo-belo.txt $D "VivaReal" https://www.vivareal.com.br
 python3 scripts/process_iw.py raw/iw_bairros.txt $D $L | head -1
 python3 scripts/process_lopes.py raw/lopes_bairros.txt raw/lopes_fix.txt $D $L | head -1
+python3 scripts/process_qa.py raw/prohabitar.txt $D $L | head -1
 python3 scripts/finalize.py

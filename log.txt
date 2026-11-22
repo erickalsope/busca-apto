@@ -26,3 +26,4 @@
 2026-11-22 Lopes. 1305 cards vistos, 1045 repetidos entre bairros, 143 fora dos bairros, 117 anúncios abertos. Pausa combinada ao chegar em 220 imóveis (50 novos desde a regra). Os anúncios restantes da Lopes já estão em raw/lopes_bairros.txt e entram na próxima rodada.
 2026-11-22 Ajuste geral. Comparação de endereço entre fontes passou a ignorar acento e prefixo (Rua, Av.) e código do anunciante passou a casar quando um nome de imobiliária contém o outro. Base refeita do zero com scripts/rebuild.sh.
 2026-11-22 Lopes. Segunda leva registrada, +50 imóveis. Pausa combinada em 270. Ficam 15 anúncios da Lopes coletados aguardando.
+2026-11-22 Lopes restante registrado (+15). Prohabitar registrado (+5).
