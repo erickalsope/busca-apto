@@ -13,5 +13,4 @@ ordem = ['quintoandar', 'lopes', 'zap', 'imovelweb', 'prohabitar']
 files = [f'raw/enrich_{o}.json' for o in ordem] + sorted(f for f in glob.glob('raw/enrich_*.json')
                                                           if os.path.basename(f)[7:-5] not in ordem)
 subprocess.run([sys.executable, 'scripts/enrich.py', hoje] + files, check=True)
-with open('scripts/rebuild.sh', 'a', encoding='utf-8') as fh:
-    fh.write(f'# lote {nome}\n')
+subprocess.run([sys.executable, 'scripts/v2.py', 'filtra'], check=True)

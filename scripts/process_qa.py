@@ -6,15 +6,20 @@ import csv, json, sys, os, re
 
 BASE = 'base_aptos.csv'
 LINKS = 'links_aptos.csv'
-BASE_COLS = 'id;status;data_primeira_coleta;data_ultima_verificacao;data_indisponivel;qtd_anuncios;imobiliarias;link_principal;foto_capa_url;tipo;bairro;endereco;aluguel;condominio;iptu_mensal;total_mensal;outras_taxas;area_util_m2;valor_m2;quartos;suites;banheiros;vagas;andar;mobiliado;aceita_pet;itens_imovel;lazer_condominio;qtd_fotos;observacoes;latitude;longitude;localizacao_precisao;cep;numero;andar_exato;seguro_incendio;taxa_servico;banheiros_sociais;lavabo;banheiro_servico;vagas_cobertas;vagas_descobertas;aquecimento_agua;piso;cozinha;area_servico;seguranca;mercadinho;itens_ausentes'.split(';')
+BASE_COLS = 'id;status;data_primeira_coleta;data_ultima_verificacao;data_indisponivel;qtd_anuncios;imobiliarias;link_principal;foto_capa_url;tipo;bairro;endereco;aluguel;condominio;iptu_mensal;total_mensal;outras_taxas;area_util_m2;valor_m2;quartos;suites;banheiros;vagas;andar;mobiliado;aceita_pet;itens_imovel;lazer_condominio;qtd_fotos;observacoes;latitude;longitude;localizacao_precisao;cep;numero;andar_exato;seguro_incendio;taxa_servico;banheiros_sociais;lavabo;banheiro_servico;vagas_cobertas;vagas_descobertas;aquecimento_agua;piso;cozinha;area_servico;seguranca;mercadinho;itens_ausentes;sala_ampla;ar_condicionado;contas_individualizadas;armarios_cozinha;armarios_banheiro;armarios_quartos'.split(';')
 LINK_COLS = 'id_imovel;fonte;anunciante;codigo_anunciante;link;aluguel_anunciado;status_link;data_primeira_coleta;data_ultima_verificacao'.split(';')
 ACESS = {'corrimão', 'piso tátil', 'rampas de acesso', 'vaga de garagem acessível',
          'quartos e corredores com portas amplas', 'banheiro adaptado'}
 TIPOS = {'Apartamento': 'apartamento', 'Casa': 'casa', 'CasaCondominio': 'casa em condomínio',
          'StudioOuKitchenette': 'studio'}
-BAIRROS_OK = {'brooklin', 'brooklin paulista', 'brooklin novo', 'campo belo', 'vila mascote',
-              'jardim prudência', 'santo amaro', 'alto da boa vista', 'chácara santo antônio',
-              'granja julieta', 'jardim marajoara', 'socorro', 'interlagos', 'vila alexandria', 'vila sofia'}
+# filtro v2 (2026-11-28). A peneira fina fica em scripts/v2.py, que roda depois do enrich.
+BAIRROS_OK = {'vila mascote', 'jardim marajoara', 'vila alexandria', 'jardim prudência', 'vila sofia',
+              'campo belo', 'brooklin', 'brooklin paulista', 'brooklin novo', 'brooklin velho',
+              'vila santa catarina', 'chácara santo antônio', 'granja julieta', 'alto da boa vista'}
+
+
+V1_IDS = [int(r['id']) for r in csv.DictReader(open('v1/base_aptos.csv', encoding='utf-8'), delimiter=';')] if os.path.exists('v1/base_aptos.csv') else []
+V1_LINK_ID = {r['link']: r['id_imovel'] for r in csv.DictReader(open('v1/links_aptos.csv', encoding='utf-8'), delimiter=';')} if os.path.exists('v1/links_aptos.csv') else {}
 
 
 def load(path, cols):
@@ -121,9 +126,9 @@ def main():
             motivo = 'sem aluguel'
         elif beds_n is not None and beds_n < 2:
             motivo = 'quartos'
-        elif area is not None and area < 60:
+        elif area is not None and area < 68:
             motivo = 'area'
-        elif teto > 8000 or teto < 3000:
+        elif teto > 7350 or (rent or 0) < 2800:
             motivo = f'valor {teto:.0f}'
         elif norm(bairro) not in {norm(x) for x in BAIRROS_OK}:
             motivo = f'bairro {bairro}'
@@ -195,7 +200,9 @@ def main():
             continue
         if parcial is not None:
             obs.append(f"possível duplicado do id {parcial['id']}")
-        nid = str(max([int(b['id']) for b in base] + [0]) + 1)
+        nid = str(max([int(b['id']) for b in base] + V1_IDS + [0]) + 1)
+        if V1_LINK_ID.get(link) and V1_LINK_ID[link] not in {b['id'] for b in base}:
+            nid = V1_LINK_ID[link]  # imóvel que já esteve na v1 volta com o mesmo id
         row = dict(id=nid, status='disponivel', data_primeira_coleta=hoje, data_ultima_verificacao=hoje,
                    data_indisponivel='', link_principal=link, foto_capa_url=foto,
                    tipo=TIPOS.get(tipo, tipo.lower()), bairro=bairro, endereco=rua,

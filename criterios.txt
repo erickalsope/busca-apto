@@ -1,12 +1,32 @@
-Critérios da busca (salvo em 2026-11-22)
+Critérios da busca, versão 2 (aprovados em 2026-11-28)
 
-Bairros. Brooklin, Campo Belo, Vila Mascote, Jardim Prudência, Santo Amaro, Alto da Boa Vista, Chácara Santo Antônio, Granja Julieta, Jardim Marajoara, Socorro, Interlagos, Vila Alexandria, Vila Sofia (os dois últimos incluídos em 2026-11-22).
-Valor mensal total entre R$ 3000 e R$ 8000, somando aluguel, condomínio, IPTU e seguro incêndio (quando o anúncio mostrar o seguro). Só aluguel, nada de venda.
-Quartos mínimos. 2.
-Área útil mínima. 60 m².
-Vagas, suítes, tipo de imóvel, pet, mobília e itens do condomínio. Sem filtro. Todos os tipos entram (apartamento, casa, casa em condomínio, studio).
-Anunciantes. Só imobiliárias da lista (Prohabitar, Monte Alegre Homes, Novaris, CASA192, Scheid ou Scheid Prime, Ronaldo Farias, Bri&F ou Brief, Rofe, Rumo Sul, Lopes ou Lopes Urban, SPO, Delmo, Five ou F.O.Campos, Claudia Ferreira, Vânia Imóveis). Exceção. QuintoAndar entra como anunciante aceito.
-Limites. 150 imóveis no total e 2 páginas de resultado por bairro em cada fonte.
-Modo da rodada de 2026-11-22. Buscar imóveis novos (base vazia).
-Ritmo combinado em 2026-11-22. Sem pausa por fonte. Parar só a cada 100 imóveis novos registrados (era 50 até a base chegar a 270), mostrar de onde vêm, quais fontes faltam e pedir ok para seguir.
-Atualização de 2026-11-22. Colunas novas para a nota dos imóveis (coordenadas, cep, número, andar exato, seguro e taxa separados, banheiros sociais, lavabo, banheiro de serviço, vagas cobertas e descobertas, aquecimento de água, piso, cozinha, área de serviço, segurança, mercadinho e itens ausentes) e arquivo descricoes_aptos.csv com o texto de cada anúncio. Só escrever nao quando o anúncio disser que não tem.
+A base v1 (500 imóveis de 2026-11-22) está guardada na pasta v1. A base v2 começou com os 112 imóveis da v1 que passam neste filtro e mantém os mesmos ids. Imóveis novos recebem id a partir de 501. Um imóvel que já esteve na v1 volta com o id que tinha.
+
+Obrigatórios
+- Pacote mensal (aluguel, condomínio, IPTU e seguro incêndio) entre R$ 4300 e R$ 7350.
+- Quando o anúncio não mostra o condomínio, o imóvel entra se aluguel, IPTU e seguro somarem até R$ 6750 (supõe pelo menos R$ 600 de condomínio) e o aluguel for de pelo menos R$ 3300. Fica com o aviso verificar condominio.
+- Área útil de 68 m² ou mais.
+- 2 quartos ou mais (exceção pedida pelo Erick), com pelo menos 1 suíte. Suíte sem informação entra com o aviso verificar suíte.
+- 2 banheiros com chuveiro ou mais, sem contar lavabo e banheiro de serviço. Sem informação entra com o aviso verificar banheiros.
+- 1 vaga ou mais. Coberta vale mais na nota.
+- Tipo apartamento, cobertura, duplex ou garden. Casa, studio e flat ficam fora.
+- Armários na cozinha e nos banheiros e área de serviço. Só sai quando o anúncio disser que não tem. Sem informação entra com o aviso verificar armários ou verificar área de serviço.
+
+Bairros
+Vila Mascote, Jardim Marajoara, Vila Alexandria, Jardim Prudência, Vila Sofia, Campo Belo, Brooklin (Paulista, Novo e Velho), Vila Santa Catarina, Chácara Santo Antônio, Granja Julieta e Alto da Boa Vista. Santo Amaro, Socorro e Interlagos saíram.
+
+Desejáveis (não filtram, entram na nota)
+Varanda, sala ampla, armários nos quartos, ar condicionado, cozinha ampla, chuveiro a gás e contas de água e gás individualizadas.
+No condomínio, o lazer das crianças é o mais importante (playground, brinquedoteca, piscina infantil, espaço kids). Academia, mercadinho, piscina e quadra vêm depois. Nenhum item do condomínio é obrigatório.
+
+Colunas novas da v2 em base_aptos.csv (no fim do cabeçalho)
+sala_ampla (sim, nao ou vazio), ar_condicionado (sim, infra, nao ou vazio), contas_individualizadas (sim, nao ou vazio), armarios_cozinha, armarios_banheiro e armarios_quartos (sim, nao ou vazio). Só escrever nao quando o anúncio disser que não tem.
+
+Anunciantes
+Qualquer imobiliária nos portais (QuintoAndar, ZAP, VivaReal, Imovelweb, Chaves na Mão, Lopes) e os sites das imobiliárias da lista (Prohabitar, Monte Alegre Homes, Novaris, CASA192, Scheid, Ronaldo Farias, Bri&F, Rofe, Rumo Sul, Lopes, SPO, Delmo, Five, Claudia Ferreira, Vânia Imóveis) e as que usam o Vista da Loft.
+
+Segurança da rua
+entorno_aptos.csv traz roubos_400m_12m e seguranca, calculados com os dados da SSP/SP conforme busca-apto/01_Criterios_da_Nota.md.
+
+Ritmo
+Parar a cada 100 imóveis novos, mostrar de onde vêm e quais fontes faltam e pedir ok para seguir. Commit e push a cada pausa.

@@ -1,0 +1,12 @@
+Critérios da busca (salvo em 2026-11-22)
+
+Bairros. Brooklin, Campo Belo, Vila Mascote, Jardim Prudência, Santo Amaro, Alto da Boa Vista, Chácara Santo Antônio, Granja Julieta, Jardim Marajoara, Socorro, Interlagos, Vila Alexandria, Vila Sofia (os dois últimos incluídos em 2026-11-22).
+Valor mensal total entre R$ 3000 e R$ 8000, somando aluguel, condomínio, IPTU e seguro incêndio (quando o anúncio mostrar o seguro). Só aluguel, nada de venda.
+Quartos mínimos. 2.
+Área útil mínima. 60 m².
+Vagas, suítes, tipo de imóvel, pet, mobília e itens do condomínio. Sem filtro. Todos os tipos entram (apartamento, casa, casa em condomínio, studio).
+Anunciantes. Só imobiliárias da lista (Prohabitar, Monte Alegre Homes, Novaris, CASA192, Scheid ou Scheid Prime, Ronaldo Farias, Bri&F ou Brief, Rofe, Rumo Sul, Lopes ou Lopes Urban, SPO, Delmo, Five ou F.O.Campos, Claudia Ferreira, Vânia Imóveis). Exceção. QuintoAndar entra como anunciante aceito.
+Limites. 150 imóveis no total e 2 páginas de resultado por bairro em cada fonte.
+Modo da rodada de 2026-11-22. Buscar imóveis novos (base vazia).
+Ritmo combinado em 2026-11-22. Sem pausa por fonte. Parar só a cada 100 imóveis novos registrados (era 50 até a base chegar a 270), mostrar de onde vêm, quais fontes faltam e pedir ok para seguir.
+Atualização de 2026-11-22. Colunas novas para a nota dos imóveis (coordenadas, cep, número, andar exato, seguro e taxa separados, banheiros sociais, lavabo, banheiro de serviço, vagas cobertas e descobertas, aquecimento de água, piso, cozinha, área de serviço, segurança, mercadinho e itens ausentes) e arquivo descricoes_aptos.csv com o texto de cada anúncio. Só escrever nao quando o anúncio disser que não tem.
