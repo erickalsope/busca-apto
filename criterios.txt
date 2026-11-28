@@ -26,7 +26,7 @@ Anunciantes
 Qualquer imobiliária nos portais (QuintoAndar, ZAP, VivaReal, Imovelweb, Chaves na Mão, Lopes) e os sites das imobiliárias da lista (Prohabitar, Monte Alegre Homes, Novaris, CASA192, Scheid, Ronaldo Farias, Bri&F, Rofe, Rumo Sul, Lopes, SPO, Delmo, Five, Claudia Ferreira, Vânia Imóveis) e as que usam o Vista da Loft.
 
 Segurança da rua
-entorno_aptos.csv traz roubos_400m_12m e seguranca, calculados com os dados da SSP/SP conforme busca-apto/01_Criterios_da_Nota.md.
+O chat do front calcula a segurança da rua. A coleta garante latitude, longitude e cep.
 
 Ritmo
-Parar a cada 100 imóveis novos, mostrar de onde vêm e quais fontes faltam e pedir ok para seguir. Commit e push a cada pausa.
+Seguir sem pausa até 300 imóveis na base v2 ou até 70% dos tokens da sessão (pedido do Erick em 2026-11-28). Commit e push a cada lote.

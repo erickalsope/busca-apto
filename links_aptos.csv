@@ -1,129 +1,244 @@
 id_imovel;fonte;anunciante;codigo_anunciante;link;aluguel_anunciado;status_link;data_primeira_coleta;data_ultima_verificacao
-18;QuintoAndar;QuintoAndar;895675084;https://www.quintoandar.com.br/imovel/895675084;4180;ativo;2026-11-22;2026-11-22
-26;QuintoAndar;QuintoAndar;895696025;https://www.quintoandar.com.br/imovel/895696025;6000;ativo;2026-11-22;2026-11-22
-41;QuintoAndar;QuintoAndar;895850084;https://www.quintoandar.com.br/imovel/895850084;4500;ativo;2026-11-22;2026-11-22
-47;QuintoAndar;QuintoAndar;895640400;https://www.quintoandar.com.br/imovel/895640400;4549;ativo;2026-11-22;2026-11-22
-54;QuintoAndar;QuintoAndar;893291636;https://www.quintoandar.com.br/imovel/893291636;5500;ativo;2026-11-22;2026-11-22
-60;QuintoAndar;QuintoAndar;893217463;https://www.quintoandar.com.br/imovel/893217463;3880;ativo;2026-11-22;2026-11-22
-63;QuintoAndar;QuintoAndar;895766227;https://www.quintoandar.com.br/imovel/895766227;5090;ativo;2026-11-22;2026-11-22
-65;QuintoAndar;QuintoAndar;895045480;https://www.quintoandar.com.br/imovel/895045480;6000;ativo;2026-11-22;2026-11-22
-67;QuintoAndar;QuintoAndar;895819754;https://www.quintoandar.com.br/imovel/895819754;5100;ativo;2026-11-22;2026-11-22
-74;QuintoAndar;QuintoAndar;894335867;https://www.quintoandar.com.br/imovel/894335867;5300;ativo;2026-11-22;2026-11-22
-76;QuintoAndar;QuintoAndar;895821598;https://www.quintoandar.com.br/imovel/895821598;5200;ativo;2026-11-22;2026-11-22
-84;QuintoAndar;QuintoAndar;893286490;https://www.quintoandar.com.br/imovel/893286490;4800;ativo;2026-11-22;2026-11-22
-85;QuintoAndar;QuintoAndar;894285051;https://www.quintoandar.com.br/imovel/894285051;4100;ativo;2026-11-22;2026-11-22
-86;QuintoAndar;QuintoAndar;895677994;https://www.quintoandar.com.br/imovel/895677994;3960;ativo;2026-11-22;2026-11-22
-88;QuintoAndar;QuintoAndar;895637240;https://www.quintoandar.com.br/imovel/895637240;3450;ativo;2026-11-22;2026-11-22
-89;QuintoAndar;QuintoAndar;895726752;https://www.quintoandar.com.br/imovel/895726752;4490;ativo;2026-11-22;2026-11-22
-90;QuintoAndar;QuintoAndar;892925575;https://www.quintoandar.com.br/imovel/892925575;3300;ativo;2026-11-22;2026-11-22
-99;QuintoAndar;QuintoAndar;895572794;https://www.quintoandar.com.br/imovel/895572794;4200;ativo;2026-11-22;2026-11-22
-103;QuintoAndar;QuintoAndar;893447222;https://www.quintoandar.com.br/imovel/893447222;4650;ativo;2026-11-22;2026-11-22
-116;QuintoAndar;QuintoAndar;895865344;https://www.quintoandar.com.br/imovel/895865344;5500;ativo;2026-11-22;2026-11-22
-135;QuintoAndar;QuintoAndar;894689709;https://www.quintoandar.com.br/imovel/894689709;4690;ativo;2026-11-22;2026-11-22
-143;ZAP Imóveis;CASA 192 IMÓVEIS;AP22664;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-churrasqueira-campo-belo-zona-sul-sao-paulo-sp-70m2-id-2920024513/;3800;ativo;2026-11-22;2026-11-22
-165;ZAP Imóveis;Monte Alegre Imóveis;8421;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-mobiliado-jardim-prudencia-zona-sul-sao-paulo-sp-68m2-id-2896244118/;5000;ativo;2026-11-22;2026-11-22
-169;ZAP Imóveis;Scheid Prime;BV9378;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-piscina-jardim-prudencia-zona-sul-sao-paulo-sp-74m2-id-2915909763/;5000;ativo;2026-11-22;2026-11-22
-170;ZAP Imóveis;RUMO SUL IMÓVEIS;47992;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-mobiliado-jardim-prudencia-zona-sul-sao-paulo-sp-98m2-id-2914377220/;5000;ativo;2026-11-22;2026-11-22
+18;QuintoAndar;QuintoAndar;895675084;https://www.quintoandar.com.br/imovel/895675084;4180;ativo;2026-11-22;2026-11-28
+26;QuintoAndar;QuintoAndar;895696025;https://www.quintoandar.com.br/imovel/895696025;5800;ativo;2026-11-22;2026-11-28
+41;QuintoAndar;QuintoAndar;895850084;https://www.quintoandar.com.br/imovel/895850084;4450;ativo;2026-11-22;2026-11-28
+47;QuintoAndar;QuintoAndar;895640400;https://www.quintoandar.com.br/imovel/895640400;4410;ativo;2026-11-22;2026-11-28
+54;QuintoAndar;QuintoAndar;893291636;https://www.quintoandar.com.br/imovel/893291636;5500;ativo;2026-11-22;2026-11-28
+60;QuintoAndar;QuintoAndar;893217463;https://www.quintoandar.com.br/imovel/893217463;3880;ativo;2026-11-22;2026-11-28
+63;QuintoAndar;QuintoAndar;895766227;https://www.quintoandar.com.br/imovel/895766227;4930;ativo;2026-11-22;2026-11-28
+65;QuintoAndar;QuintoAndar;895045480;https://www.quintoandar.com.br/imovel/895045480;6000;ativo;2026-11-22;2026-11-28
+67;QuintoAndar;QuintoAndar;895819754;https://www.quintoandar.com.br/imovel/895819754;5100;ativo;2026-11-22;2026-11-28
+74;QuintoAndar;QuintoAndar;894335867;https://www.quintoandar.com.br/imovel/894335867;5300;ativo;2026-11-22;2026-11-28
+76;QuintoAndar;QuintoAndar;895821598;https://www.quintoandar.com.br/imovel/895821598;5100;ativo;2026-11-22;2026-11-28
+84;QuintoAndar;QuintoAndar;893286490;https://www.quintoandar.com.br/imovel/893286490;4800;ativo;2026-11-22;2026-11-28
+85;QuintoAndar;QuintoAndar;894285051;https://www.quintoandar.com.br/imovel/894285051;3700;ativo;2026-11-22;2026-11-28
+86;QuintoAndar;QuintoAndar;895677994;https://www.quintoandar.com.br/imovel/895677994;3960;ativo;2026-11-22;2026-11-28
+88;QuintoAndar;QuintoAndar;895637240;https://www.quintoandar.com.br/imovel/895637240;3450;ativo;2026-11-22;2026-11-28
+89;QuintoAndar;QuintoAndar;895726752;https://www.quintoandar.com.br/imovel/895726752;4490;ativo;2026-11-22;2026-11-28
+90;QuintoAndar;QuintoAndar;892925575;https://www.quintoandar.com.br/imovel/892925575;3300;ativo;2026-11-22;2026-11-28
+99;QuintoAndar;QuintoAndar;895572794;https://www.quintoandar.com.br/imovel/895572794;4150;ativo;2026-11-22;2026-11-28
+103;QuintoAndar;QuintoAndar;893447222;https://www.quintoandar.com.br/imovel/893447222;4650;ativo;2026-11-22;2026-11-28
+116;QuintoAndar;QuintoAndar;895865344;https://www.quintoandar.com.br/imovel/895865344;5500;ativo;2026-11-22;2026-11-28
+135;QuintoAndar;QuintoAndar;894689709;https://www.quintoandar.com.br/imovel/894689709;4690;ativo;2026-11-22;2026-11-28
+143;ZAP Imóveis;CASA 192 IMÓVEIS;AP22664;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-churrasqueira-campo-belo-zona-sul-sao-paulo-sp-70m2-id-2920024513/;3800;ativo;2026-11-22;2026-11-28
+165;ZAP Imóveis;Monte Alegre Imóveis;8421;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-mobiliado-jardim-prudencia-zona-sul-sao-paulo-sp-68m2-id-2896244118/;5000;ativo;2026-11-22;2026-11-28
+169;ZAP Imóveis;Scheid Prime;BV9378;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-piscina-jardim-prudencia-zona-sul-sao-paulo-sp-74m2-id-2915909763/;5000;ativo;2026-11-22;2026-11-28
+170;ZAP Imóveis;RUMO SUL IMÓVEIS;47992;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-mobiliado-jardim-prudencia-zona-sul-sao-paulo-sp-98m2-id-2914377220/;5000;ativo;2026-11-22;2026-11-28
 143;VivaReal;CASA 192 IMÓVEIS;AP22664;https://www.vivareal.com.br/imovel/apartamento-2-quartos-campo-belo-zona-sul-sao-paulo-com-garagem-70m2-aluguel-RS3800-id-2920024513/;3800;ativo;2026-11-22;2026-11-22
-169;Imovelweb;Scheid Prime;BV9378;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-no-jardim-prudencia-com-73m-3011223538.html;5000;ativo;2026-11-22;2026-11-22
-174;Imovelweb;RUMO SUL IMÓVEIS;47888;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3043989563.html;4600;ativo;2026-11-22;2026-11-22
-185;Lopes;Lopes Local - Jardim América;REO1198461;https://www.lopes.com.br/imovel/REO1198461;5250;ativo;2026-11-22;2026-11-22
-186;Lopes;Lopes Elite;REO1200761;https://www.lopes.com.br/imovel/REO1200761;4800;ativo;2026-11-22;2026-11-22
-202;Lopes;Lopes Urban;REO281560;https://www.lopes.com.br/imovel/REO281560;4500;ativo;2026-11-22;2026-11-22
-203;Lopes;Lopes Elite;REO521091;https://www.lopes.com.br/imovel/REO521091;5500;ativo;2026-11-22;2026-11-22
-205;Lopes;Lopes Urban;REO1094154;https://www.lopes.com.br/imovel/REO1094154;5400;ativo;2026-11-22;2026-11-22
-209;Lopes;Lopes Condovel Vila Mariana;REO989106;https://www.lopes.com.br/imovel/REO989106;3500;ativo;2026-11-22;2026-11-22
-41;Lopes;Lopes Condovel Vila Mariana;REO344889;https://www.lopes.com.br/imovel/REO344889;4500;ativo;2026-11-22;2026-11-22
-229;Lopes;Lopes Local - Pinheiros;REO1221537;https://www.lopes.com.br/imovel/REO1221537;4527;ativo;2026-11-22;2026-11-22
-233;Lopes;Lopes Prime – Moema (Nova);REO1177431;https://www.lopes.com.br/imovel/REO1177431;5600;ativo;2026-11-22;2026-11-22
-239;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1205389;https://www.lopes.com.br/imovel/REO1205389;5300;ativo;2026-11-22;2026-11-22
-242;Lopes;Lopes Local - Jardim América;REO1220098;https://www.lopes.com.br/imovel/REO1220098;4000;ativo;2026-11-22;2026-11-22
-243;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1166369;https://www.lopes.com.br/imovel/REO1166369;5500;ativo;2026-11-22;2026-11-22
-257;Lopes;Lopes 8A;REO1220620;https://www.lopes.com.br/imovel/REO1220620;3400;ativo;2026-11-22;2026-11-22
-261;Lopes;Lopes Urban;REO1134182;https://www.lopes.com.br/imovel/REO1134182;4800;ativo;2026-11-22;2026-11-22
-276;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1215079;https://www.lopes.com.br/imovel/REO1215079;4500;ativo;2026-11-22;2026-11-22
-291;CASA192;CASA 192 IMÓVEIS;AP28801;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-75-m/AP28801-REH;5000;ativo;2026-11-22;2026-11-22
-292;CASA192;CASA 192 IMÓVEIS;AP27610;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-74-m/AP27610-REH;3300;ativo;2026-11-22;2026-11-22
-310;CASA192;CASA 192 IMÓVEIS;AP28727;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-92-m/AP28727-REH;4500;ativo;2026-11-22;2026-11-22
-310;CASA192;CASA 192 IMÓVEIS;AP28599;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP28599-REH;4500;ativo;2026-11-22;2026-11-22
-310;CASA192;CASA 192 IMÓVEIS;AP0784;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP0784-REH;4400;ativo;2026-11-22;2026-11-22
-327;Rofe;Rofe Imóveis;RF21548;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-novo/brooklin-bricks/RF21548;5650;ativo;2026-11-22;2026-11-22
-330;Rofe;Rofe Imóveis;RF3143;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-novo/code-berrini/RF3143;5500;ativo;2026-11-22;2026-11-22
-334;Rofe;Rofe Imóveis;RF20601;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/campo-belo/code-campo-belo/RF20601;5200;ativo;2026-11-22;2026-11-22
-337;Rofe;Rofe Imóveis;RF11652;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/jardim-prudencia/up-home-jardim-prudencia/RF11652;5000;ativo;2026-11-22;2026-11-22
-338;Rofe;Rofe Imóveis;RF2908;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/campo-belo/code-campo-belo/RF2908;5000;ativo;2026-11-22;2026-11-22
-339;Rofe;Rofe Imóveis;RF22143;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/quality-house-jardim-prudencia/RF22143;5000;ativo;2026-11-22;2026-11-22
-340;Rofe;Rofe Imóveis;RF31123;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/quality-house-jardim-prudencia/RF31123;5000;ativo;2026-11-22;2026-11-22
-341;Rofe;Rofe Imóveis;RF50591;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/ventura/RF50591;4500;ativo;2026-11-22;2026-11-22
-342;Rofe;Rofe Imóveis;RF50925;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/florart/RF50925;4500;ativo;2026-11-22;2026-11-22
-352;Rofe;Rofe Imóveis;RF43537;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-paulista/vila-estoril/RF43537;4000;ativo;2026-11-22;2026-11-22
-354;Rofe;Rofe Imóveis;RF49604;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/campo-belo/edificio-miosotis/RF49604;3500;ativo;2026-11-22;2026-11-22
-357;Rofe;Rofe Imóveis;RF48725;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/vila-mascote/alexandria/RF48725;4000;ativo;2026-11-22;2026-11-22
-362;Brief;Bri&F Imóveis;BF2908;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-2dormitorios-1suite-2vagas-75m2/BF2908;5400;ativo;2026-11-22;2026-11-22
-367;Brief;Bri&F Imóveis;BF3207;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-3dormitorios-1vaga-87m2/BF3207;5000;ativo;2026-11-22;2026-11-22
-368;Brief;Bri&F Imóveis;BF3289;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-2dormitorios-1suite-2vagas-74m2/BF3289;4900;ativo;2026-11-22;2026-11-22
-372;SPO;SPO Imóveis;SP5368;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-paulista-2dormitorios-1suite-1vaga-68m2/SP5368;5600;ativo;2026-11-22;2026-11-22
-373;SPO;SPO Imóveis;SP5395;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-2dormitorios-1suite-1vaga-72m2/SP5395;5490;ativo;2026-11-22;2026-11-22
-381;SPO;SPO Imóveis;SP3332;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-3dormitorios-1suite-2vagas-80m2/SP3332;3690;ativo;2026-11-22;2026-11-22
-384;SPO;SPO Imóveis;SP5380;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-3dormitorios-1suite-79m2/SP5380;3554;ativo;2026-11-22;2026-11-22
-394;Rumo Sul;Rumo Sul Imóveis;44682;https://www.rumosul.com.br/apartamento/jardim-marajoara/44682;3700;ativo;2026-11-22;2026-11-22
-395;Rumo Sul;Rumo Sul Imóveis;48122;https://www.rumosul.com.br/apartamento/jardim-marajoara/48122;5500;ativo;2026-11-22;2026-11-22
-396;Rumo Sul;Rumo Sul Imóveis;47275;https://www.rumosul.com.br/apartamento/jardim-marajoara/47275;3400;ativo;2026-11-22;2026-11-22
-397;Rumo Sul;Rumo Sul Imóveis;34772;https://www.rumosul.com.br/apartamento/jardim-marajoara/34772;5000;ativo;2026-11-22;2026-11-22
-399;Rumo Sul;Rumo Sul Imóveis;26784;https://www.rumosul.com.br/apartamento/jardim-marajoara/26784;3500;ativo;2026-11-22;2026-11-22
-401;Rumo Sul;Rumo Sul Imóveis;42523;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/42523;5000;ativo;2026-11-22;2026-11-22
-397;Rumo Sul;Rumo Sul Imóveis;47949;https://www.rumosul.com.br/apartamento/jardim-marajoara/47949;4600;ativo;2026-11-22;2026-11-22
-402;Rumo Sul;Rumo Sul Imóveis;26348;https://www.rumosul.com.br/apartamento/jardim-marajoara/26348;3800;ativo;2026-11-22;2026-11-22
-403;Rumo Sul;Rumo Sul Imóveis;43962;https://www.rumosul.com.br/apartamento/jardim-marajoara/43962;4000;ativo;2026-11-22;2026-11-22
-404;Rumo Sul;Rumo Sul Imóveis;48098;https://www.rumosul.com.br/apartamento/jardim-marajoara/48098;3568;ativo;2026-11-22;2026-11-22
-407;Rumo Sul;Rumo Sul Imóveis;48106;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/48106;5500;ativo;2026-11-22;2026-11-22
-408;Rumo Sul;Rumo Sul Imóveis;43729;https://www.rumosul.com.br/apartamento/jardim-marajoara/43729;3200;ativo;2026-11-22;2026-11-22
-411;Rumo Sul;Rumo Sul Imóveis;47994;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/47994;3500;ativo;2026-11-22;2026-11-22
-413;Rumo Sul;Rumo Sul Imóveis;48065;https://www.rumosul.com.br/apartamento/jardim-marajoara/48065;4800;ativo;2026-11-22;2026-11-22
-403;Rumo Sul;Rumo Sul Imóveis;46397;https://www.rumosul.com.br/apartamento/jardim-marajoara/46397;5250;ativo;2026-11-22;2026-11-22
-418;Rumo Sul;Rumo Sul Imóveis;48054;https://www.rumosul.com.br/apartamento/chacara-santo-antonio/48054;3985;ativo;2026-11-22;2026-11-22
-422;Rumo Sul;Rumo Sul Imóveis;38405;https://www.rumosul.com.br/apartamento/jardim-marajoara/38405;3000;ativo;2026-11-22;2026-11-22
-170;Rumo Sul;Rumo Sul Imóveis;47992;https://www.rumosul.com.br/apartamento/jardim-prudencia/47992;5000;ativo;2026-11-22;2026-11-22
-396;Rumo Sul;Rumo Sul Imóveis;47679;https://www.rumosul.com.br/apartamento/jardim-marajoara/47679;3800;ativo;2026-11-22;2026-11-22
-424;Rumo Sul;Rumo Sul Imóveis;47937;https://www.rumosul.com.br/apartamento/jardim-prudencia/47937;4800;ativo;2026-11-22;2026-11-22
-425;Rumo Sul;Rumo Sul Imóveis;23900;https://www.rumosul.com.br/apartamento/jardim-marajoara/23900;3500;ativo;2026-11-22;2026-11-22
-426;Rumo Sul;Rumo Sul Imóveis;47890;https://www.rumosul.com.br/apartamento/campo-belo/47890;5000;ativo;2026-11-22;2026-11-22
-430;Scheid;Scheid Imóveis;MC18180;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-100m2-4dormitorios-2vagas/MC18180;5500;ativo;2026-11-22;2026-11-22
-435;Scheid;Scheid Imóveis;MC17702;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-68m2-2dormitorios-2vagas/MC17702;4900;ativo;2026-11-22;2026-11-22
-437;Scheid;Scheid Imóveis;MR112758;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-112m2-3dormitorios-2vagas/MR112758;4300;ativo;2026-11-22;2026-11-22
-440;Scheid;Scheid Imóveis;MC17917;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-70m2-2dormitorios-1vaga/MC17917;3600;ativo;2026-11-22;2026-11-22
-450;Scheid;Scheid Imóveis;MC18364;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-144m2-3dormitorios-3vagas/MC18364;5640;ativo;2026-11-22;2026-11-22
-451;Scheid;Scheid Imóveis;MC18362;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-143m2-3dormitorios-3vagas/MC18362;5600;ativo;2026-11-22;2026-11-22
-452;Scheid;Scheid Imóveis;SG8842;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/SG8842;5300;ativo;2026-11-22;2026-11-22
-453;Scheid;Scheid Imóveis;MC18521;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/MC18521;5300;ativo;2026-11-22;2026-11-22
-455;Scheid;Scheid Imóveis;SG6297;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-77m2-3dormitorios-2vagas/SG6297;4500;ativo;2026-11-22;2026-11-22
-456;Scheid;Scheid Imóveis;MC17334;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-105m2-3dormitorios-3vagas/MC17334;4200;ativo;2026-11-22;2026-11-22
-457;Scheid;Scheid Imóveis;MR106059;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-72m2-3dormitorios-1vaga/MR106059;3855;ativo;2026-11-22;2026-11-22
-458;Scheid;Scheid Imóveis;MR105259;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-70m2-3dormitorios-1vaga/MR105259;3850;ativo;2026-11-22;2026-11-22
-459;Scheid;Scheid Imóveis;MC18110;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-74m2-3dormitorios-1vaga/MC18110;3500;ativo;2026-11-22;2026-11-22
-460;Scheid;Scheid Imóveis;MC18051;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-85m2-3dormitorios-2vagas/MC18051;3450;ativo;2026-11-22;2026-11-22
-463;Scheid;Scheid Imóveis;MC18483;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/MC18483;5300;ativo;2026-11-22;2026-11-22
-169;Scheid;Scheid Imóveis;BV9378;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-prudencia-73m2-2dormitorios-1vaga/BV9378;5000;ativo;2026-11-22;2026-11-22
-471;QuintoAndar;QuintoAndar;895811171;https://www.quintoandar.com.br/imovel/895811171;3930;ativo;2026-11-22;2026-11-22
-472;QuintoAndar;QuintoAndar;894363150;https://www.quintoandar.com.br/imovel/894363150;3000;ativo;2026-11-22;2026-11-22
-473;QuintoAndar;QuintoAndar;895852545;https://www.quintoandar.com.br/imovel/895852545;3700;ativo;2026-11-22;2026-11-22
-474;QuintoAndar;QuintoAndar;895843808;https://www.quintoandar.com.br/imovel/895843808;4000;ativo;2026-11-22;2026-11-22
-475;QuintoAndar;QuintoAndar;895254683;https://www.quintoandar.com.br/imovel/895254683;3900;ativo;2026-11-22;2026-11-22
-474;QuintoAndar;QuintoAndar;895274877;https://www.quintoandar.com.br/imovel/895274877;5450;ativo;2026-11-22;2026-11-22
-478;QuintoAndar;QuintoAndar;895601611;https://www.quintoandar.com.br/imovel/895601611;4250;ativo;2026-11-22;2026-11-22
-480;QuintoAndar;QuintoAndar;895387881;https://www.quintoandar.com.br/imovel/895387881;4600;ativo;2026-11-22;2026-11-22
-481;QuintoAndar;QuintoAndar;893875890;https://www.quintoandar.com.br/imovel/893875890;3400;ativo;2026-11-22;2026-11-22
-482;QuintoAndar;QuintoAndar;895747850;https://www.quintoandar.com.br/imovel/895747850;3000;ativo;2026-11-22;2026-11-22
-483;QuintoAndar;QuintoAndar;895585160;https://www.quintoandar.com.br/imovel/895585160;3100;ativo;2026-11-22;2026-11-22
-474;Imovelweb;SPO Imóveis;SP5358;https://www.imovelweb.com.br/propriedades/apartamento-69-m-no-jardim-marajoara-3-dormitorios-3046792151.html;3700;ativo;2026-11-22;2026-11-22
-394;Imovelweb;RUMO SUL IMÓVEIS;44682;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-vila-sofia-3046167722.html;3700;ativo;2026-11-22;2026-11-22
-205;Imovelweb;LOPES URBAN;REO1094154;https://www.imovelweb.com.br/propriedades/apartamento-com-3-quartos-a-venda-em-jardim-marajoara-3011957867.html;5400;ativo;2026-11-22;2026-11-22
-488;Scheid;Scheid Imóveis;BV17425;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-83m2-3dormitorios-2vagas/BV17425;6001;ativo;2026-11-22;2026-11-22
-489;Scheid;Scheid Imóveis;BV8054;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-200m2-4dormitorios-4vagas/BV8054;6000;ativo;2026-11-22;2026-11-22
-491;Scheid;Scheid Imóveis;BV17809;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-105m2-3dormitorios-2vagas/BV17809;5800;ativo;2026-11-22;2026-11-22
-496;Scheid;Scheid Imóveis;MR111967;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-160m2-4dormitorios-2vagas/MR111967;6300;ativo;2026-11-22;2026-11-22
-497;Scheid;Scheid Imóveis;MR81213;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-160m2-4dormitorios-1vaga/MR81213;6120;ativo;2026-11-22;2026-11-22
-498;Scheid;Scheid Imóveis;SG9767;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-70m2-3dormitorios-2vagas/SG9767;6000;ativo;2026-11-22;2026-11-22
-500;Scheid;Scheid Imóveis;MR112867;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-83m2-3dormitorios-2vagas/MR112867;5700;ativo;2026-11-22;2026-11-22
-402;ZAP Imóveis;RUMO SUL IMÓVEIS;26348;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-salao-de-festas-jardim-marajoara-zona-sul-sao-paulo-sp-75m2-id-2921502147/;3800;ativo;2026-11-22;2026-11-22
-174;ZAP Imóveis;RUMO SUL IMÓVEIS;47888;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-churrasqueira-jardim-marajoara-zona-sul-sao-paulo-sp-150m2-id-2908296434/;4600;ativo;2026-11-22;2026-11-22
+169;Imovelweb;Scheid Prime;BV9378;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-no-jardim-prudencia-com-73m-3011223538.html;5000;ativo;2026-11-22;2026-11-28
+174;Imovelweb;RUMO SUL IMÓVEIS;47888;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3043989563.html;4600;ativo;2026-11-22;2026-11-28
+185;Lopes;Lopes Local - Jardim América;REO1198461;https://www.lopes.com.br/imovel/REO1198461;5250;ativo;2026-11-22;2026-11-28
+186;Lopes;Lopes Elite;REO1200761;https://www.lopes.com.br/imovel/REO1200761;4800;ativo;2026-11-22;2026-11-28
+202;Lopes;Lopes Urban;REO281560;https://www.lopes.com.br/imovel/REO281560;4500;ativo;2026-11-22;2026-11-28
+203;Lopes;Lopes Elite;REO521091;https://www.lopes.com.br/imovel/REO521091;5500;ativo;2026-11-22;2026-11-28
+205;Lopes;Lopes Urban;REO1094154;https://www.lopes.com.br/imovel/REO1094154;5400;ativo;2026-11-22;2026-11-28
+209;Lopes;Lopes Condovel Vila Mariana;REO989106;https://www.lopes.com.br/imovel/REO989106;3500;ativo;2026-11-22;2026-11-28
+41;Lopes;Lopes Condovel Vila Mariana;REO344889;https://www.lopes.com.br/imovel/REO344889;4500;ativo;2026-11-22;2026-11-28
+229;Lopes;Lopes Local - Pinheiros;REO1221537;https://www.lopes.com.br/imovel/REO1221537;4527;ativo;2026-11-22;2026-11-28
+233;Lopes;Lopes Prime – Moema (Nova);REO1177431;https://www.lopes.com.br/imovel/REO1177431;5600;ativo;2026-11-22;2026-11-28
+239;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1205389;https://www.lopes.com.br/imovel/REO1205389;5300;ativo;2026-11-22;2026-11-28
+242;Lopes;Lopes Local - Jardim América;REO1220098;https://www.lopes.com.br/imovel/REO1220098;4000;ativo;2026-11-22;2026-11-28
+243;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1166369;https://www.lopes.com.br/imovel/REO1166369;5500;ativo;2026-11-22;2026-11-28
+257;Lopes;Lopes 8A;REO1220620;https://www.lopes.com.br/imovel/REO1220620;3400;ativo;2026-11-22;2026-11-28
+261;Lopes;Lopes Urban;REO1134182;https://www.lopes.com.br/imovel/REO1134182;4800;ativo;2026-11-22;2026-11-28
+276;Lopes;LPS Soluções Imobiliarias e Participações LTDA;REO1215079;https://www.lopes.com.br/imovel/REO1215079;4500;ativo;2026-11-22;2026-11-28
+291;CASA192;CASA 192 IMÓVEIS;AP28801;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-75-m/AP28801-REH;5000;ativo;2026-11-22;2026-11-28
+292;CASA192;CASA 192 IMÓVEIS;AP27610;https://www.casa192.com/imovel/apartamento-sao-paulo-2-quartos-74-m/AP27610-REH;3300;ativo;2026-11-22;2026-11-28
+310;CASA192;CASA 192 IMÓVEIS;AP28727;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-92-m/AP28727-REH;4500;ativo;2026-11-22;2026-11-28
+310;CASA192;CASA 192 IMÓVEIS;AP28599;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP28599-REH;4500;ativo;2026-11-22;2026-11-28
+310;CASA192;CASA 192 IMÓVEIS;AP0784;https://www.casa192.com/imovel/apartamento-sao-paulo-3-quartos-95-m/AP0784-REH;4400;ativo;2026-11-22;2026-11-28
+327;Rofe;Rofe Imóveis;RF21548;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-novo/brooklin-bricks/RF21548;5650;ativo;2026-11-22;2026-11-28
+330;Rofe;Rofe Imóveis;RF3143;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-novo/code-berrini/RF3143;5500;ativo;2026-11-22;2026-11-28
+334;Rofe;Rofe Imóveis;RF20601;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/campo-belo/code-campo-belo/RF20601;5200;ativo;2026-11-22;2026-11-28
+337;Rofe;Rofe Imóveis;RF11652;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/jardim-prudencia/up-home-jardim-prudencia/RF11652;5000;ativo;2026-11-22;2026-11-28
+338;Rofe;Rofe Imóveis;RF2908;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/campo-belo/code-campo-belo/RF2908;5000;ativo;2026-11-22;2026-11-28
+339;Rofe;Rofe Imóveis;RF22143;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/quality-house-jardim-prudencia/RF22143;5000;ativo;2026-11-22;2026-11-28
+340;Rofe;Rofe Imóveis;RF31123;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/quality-house-jardim-prudencia/RF31123;5000;ativo;2026-11-22;2026-11-28
+341;Rofe;Rofe Imóveis;RF50591;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/ventura/RF50591;4500;ativo;2026-11-22;2026-11-28
+342;Rofe;Rofe Imóveis;RF50925;https://www.rofeimoveis.com.br/imovel/apartamento/locacao/sao-paulo/jardim-prudencia/florart/RF50925;4500;ativo;2026-11-22;2026-11-28
+352;Rofe;Rofe Imóveis;RF43537;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/brooklin-paulista/vila-estoril/RF43537;4000;ativo;2026-11-22;2026-11-28
+354;Rofe;Rofe Imóveis;RF49604;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/campo-belo/edificio-miosotis/RF49604;3500;ativo;2026-11-22;2026-11-28
+357;Rofe;Rofe Imóveis;RF48725;https://www.rofeimoveis.com.br/imovel/apartamento/venda-e-locacao/sao-paulo/vila-mascote/alexandria/RF48725;4000;ativo;2026-11-22;2026-11-28
+362;Brief;Bri&F Imóveis;BF2908;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-2dormitorios-1suite-2vagas-75m2/BF2908;5400;ativo;2026-11-22;2026-11-28
+367;Brief;Bri&F Imóveis;BF3207;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-3dormitorios-1vaga-87m2/BF3207;5000;ativo;2026-11-22;2026-11-28
+368;Brief;Bri&F Imóveis;BF3289;https://www.briefimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-2dormitorios-1suite-2vagas-74m2/BF3289;4900;ativo;2026-11-22;2026-11-28
+372;SPO;SPO Imóveis;SP5368;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-brooklin-paulista-2dormitorios-1suite-1vaga-68m2/SP5368;5600;ativo;2026-11-22;2026-11-28
+373;SPO;SPO Imóveis;SP5395;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-2dormitorios-1suite-1vaga-72m2/SP5395;5490;ativo;2026-11-22;2026-11-28
+381;SPO;SPO Imóveis;SP3332;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-3dormitorios-1suite-2vagas-80m2/SP3332;3690;ativo;2026-11-22;2026-11-28
+384;SPO;SPO Imóveis;SP5380;https://www.spoimoveis.com.br/imovel/apartamento-locacao-sao-paulo-jardim-marajoara-3dormitorios-1suite-79m2/SP5380;3554;ativo;2026-11-22;2026-11-28
+394;Rumo Sul;Rumo Sul Imóveis;44682;https://www.rumosul.com.br/apartamento/jardim-marajoara/44682;3700;ativo;2026-11-22;2026-11-28
+395;Rumo Sul;Rumo Sul Imóveis;48122;https://www.rumosul.com.br/apartamento/jardim-marajoara/48122;5500;ativo;2026-11-22;2026-11-28
+396;Rumo Sul;Rumo Sul Imóveis;47275;https://www.rumosul.com.br/apartamento/jardim-marajoara/47275;3400;ativo;2026-11-22;2026-11-28
+397;Rumo Sul;Rumo Sul Imóveis;34772;https://www.rumosul.com.br/apartamento/jardim-marajoara/34772;5000;ativo;2026-11-22;2026-11-28
+399;Rumo Sul;Rumo Sul Imóveis;26784;https://www.rumosul.com.br/apartamento/jardim-marajoara/26784;3500;ativo;2026-11-22;2026-11-28
+401;Rumo Sul;Rumo Sul Imóveis;42523;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/42523;5000;ativo;2026-11-22;2026-11-28
+397;Rumo Sul;Rumo Sul Imóveis;47949;https://www.rumosul.com.br/apartamento/jardim-marajoara/47949;4600;ativo;2026-11-22;2026-11-28
+402;Rumo Sul;Rumo Sul Imóveis;26348;https://www.rumosul.com.br/apartamento/jardim-marajoara/26348;3800;ativo;2026-11-22;2026-11-28
+403;Rumo Sul;Rumo Sul Imóveis;43962;https://www.rumosul.com.br/apartamento/jardim-marajoara/43962;4000;ativo;2026-11-22;2026-11-28
+404;Rumo Sul;Rumo Sul Imóveis;48098;https://www.rumosul.com.br/apartamento/jardim-marajoara/48098;3568;ativo;2026-11-22;2026-11-28
+407;Rumo Sul;Rumo Sul Imóveis;48106;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/48106;5500;ativo;2026-11-22;2026-11-28
+408;Rumo Sul;Rumo Sul Imóveis;43729;https://www.rumosul.com.br/apartamento/jardim-marajoara/43729;3200;ativo;2026-11-22;2026-11-28
+411;Rumo Sul;Rumo Sul Imóveis;47994;https://www.rumosul.com.br/apartamento/alto-da-boa-vista/47994;3500;ativo;2026-11-22;2026-11-28
+413;Rumo Sul;Rumo Sul Imóveis;48065;https://www.rumosul.com.br/apartamento/jardim-marajoara/48065;4800;ativo;2026-11-22;2026-11-28
+403;Rumo Sul;Rumo Sul Imóveis;46397;https://www.rumosul.com.br/apartamento/jardim-marajoara/46397;5250;ativo;2026-11-22;2026-11-28
+418;Rumo Sul;Rumo Sul Imóveis;48054;https://www.rumosul.com.br/apartamento/chacara-santo-antonio/48054;3985;ativo;2026-11-22;2026-11-28
+422;Rumo Sul;Rumo Sul Imóveis;38405;https://www.rumosul.com.br/apartamento/jardim-marajoara/38405;3000;ativo;2026-11-22;2026-11-28
+170;Rumo Sul;Rumo Sul Imóveis;47992;https://www.rumosul.com.br/apartamento/jardim-prudencia/47992;5000;ativo;2026-11-22;2026-11-28
+396;Rumo Sul;Rumo Sul Imóveis;47679;https://www.rumosul.com.br/apartamento/jardim-marajoara/47679;3800;ativo;2026-11-22;2026-11-28
+424;Rumo Sul;Rumo Sul Imóveis;47937;https://www.rumosul.com.br/apartamento/jardim-prudencia/47937;4800;ativo;2026-11-22;2026-11-28
+425;Rumo Sul;Rumo Sul Imóveis;23900;https://www.rumosul.com.br/apartamento/jardim-marajoara/23900;3500;ativo;2026-11-22;2026-11-28
+426;Rumo Sul;Rumo Sul Imóveis;47890;https://www.rumosul.com.br/apartamento/campo-belo/47890;5000;ativo;2026-11-22;2026-11-28
+430;Scheid;Scheid Imóveis;MC18180;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-100m2-4dormitorios-2vagas/MC18180;5500;ativo;2026-11-22;2026-11-28
+435;Scheid;Scheid Imóveis;MC17702;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-68m2-2dormitorios-2vagas/MC17702;4900;ativo;2026-11-22;2026-11-28
+437;Scheid;Scheid Imóveis;MR112758;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-112m2-3dormitorios-2vagas/MR112758;4300;ativo;2026-11-22;2026-11-28
+440;Scheid;Scheid Imóveis;MC17917;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-campo-belo-70m2-2dormitorios-1vaga/MC17917;3600;ativo;2026-11-22;2026-11-28
+450;Scheid;Scheid Imóveis;MC18364;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-144m2-3dormitorios-3vagas/MC18364;5640;ativo;2026-11-22;2026-11-28
+451;Scheid;Scheid Imóveis;MC18362;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-143m2-3dormitorios-3vagas/MC18362;5600;ativo;2026-11-22;2026-11-28
+452;Scheid;Scheid Imóveis;SG8842;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/SG8842;5300;ativo;2026-11-22;2026-11-28
+453;Scheid;Scheid Imóveis;MC18521;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/MC18521;5300;ativo;2026-11-22;2026-11-28
+455;Scheid;Scheid Imóveis;SG6297;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-77m2-3dormitorios-2vagas/SG6297;4500;ativo;2026-11-22;2026-11-28
+456;Scheid;Scheid Imóveis;MC17334;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-105m2-3dormitorios-3vagas/MC17334;4200;ativo;2026-11-22;2026-11-28
+457;Scheid;Scheid Imóveis;MR106059;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-72m2-3dormitorios-1vaga/MR106059;3855;ativo;2026-11-22;2026-11-28
+458;Scheid;Scheid Imóveis;MR105259;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-70m2-3dormitorios-1vaga/MR105259;3850;ativo;2026-11-22;2026-11-28
+459;Scheid;Scheid Imóveis;MC18110;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-74m2-3dormitorios-1vaga/MC18110;3500;ativo;2026-11-22;2026-11-28
+460;Scheid;Scheid Imóveis;MC18051;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-85m2-3dormitorios-2vagas/MC18051;3450;ativo;2026-11-22;2026-11-28
+463;Scheid;Scheid Imóveis;MC18483;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-vila-mascote-113m2-4dormitorios-3vagas/MC18483;5300;ativo;2026-11-22;2026-11-28
+169;Scheid;Scheid Imóveis;BV9378;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-prudencia-73m2-2dormitorios-1vaga/BV9378;5000;ativo;2026-11-22;2026-11-28
+471;QuintoAndar;QuintoAndar;895811171;https://www.quintoandar.com.br/imovel/895811171;3930;ativo;2026-11-22;2026-11-28
+472;QuintoAndar;QuintoAndar;894363150;https://www.quintoandar.com.br/imovel/894363150;3000;ativo;2026-11-22;2026-11-28
+473;QuintoAndar;QuintoAndar;895852545;https://www.quintoandar.com.br/imovel/895852545;3700;ativo;2026-11-22;2026-11-28
+474;QuintoAndar;QuintoAndar;895843808;https://www.quintoandar.com.br/imovel/895843808;4000;ativo;2026-11-22;2026-11-28
+474;QuintoAndar;QuintoAndar;895274877;https://www.quintoandar.com.br/imovel/895274877;5450;ativo;2026-11-22;2026-11-28
+478;QuintoAndar;QuintoAndar;895601611;https://www.quintoandar.com.br/imovel/895601611;4250;ativo;2026-11-22;2026-11-28
+480;QuintoAndar;QuintoAndar;895387881;https://www.quintoandar.com.br/imovel/895387881;4600;ativo;2026-11-22;2026-11-28
+481;QuintoAndar;QuintoAndar;893875890;https://www.quintoandar.com.br/imovel/893875890;3400;ativo;2026-11-22;2026-11-28
+482;QuintoAndar;QuintoAndar;895747850;https://www.quintoandar.com.br/imovel/895747850;3000;ativo;2026-11-22;2026-11-28
+483;QuintoAndar;QuintoAndar;895585160;https://www.quintoandar.com.br/imovel/895585160;3100;ativo;2026-11-22;2026-11-28
+474;Imovelweb;SPO Imóveis;SP5358;https://www.imovelweb.com.br/propriedades/apartamento-69-m-no-jardim-marajoara-3-dormitorios-3046792151.html;3700;ativo;2026-11-22;2026-11-28
+394;Imovelweb;RUMO SUL IMÓVEIS;44682;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-vila-sofia-3046167722.html;3700;ativo;2026-11-22;2026-11-28
+205;Imovelweb;LOPES URBAN;REO1094154;https://www.imovelweb.com.br/propriedades/apartamento-com-3-quartos-a-venda-em-jardim-marajoara-3011957867.html;5400;ativo;2026-11-22;2026-11-28
+488;Scheid;Scheid Imóveis;BV17425;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-83m2-3dormitorios-2vagas/BV17425;6001;ativo;2026-11-22;2026-11-28
+489;Scheid;Scheid Imóveis;BV8054;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-200m2-4dormitorios-4vagas/BV8054;6000;ativo;2026-11-22;2026-11-28
+491;Scheid;Scheid Imóveis;BV17809;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-chacara-santo-antonio-105m2-3dormitorios-2vagas/BV17809;5800;ativo;2026-11-22;2026-11-28
+496;Scheid;Scheid Imóveis;MR111967;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-160m2-4dormitorios-2vagas/MR111967;6300;ativo;2026-11-22;2026-11-28
+497;Scheid;Scheid Imóveis;MR81213;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-160m2-4dormitorios-1vaga/MR81213;6120;ativo;2026-11-22;2026-11-28
+498;Scheid;Scheid Imóveis;SG9767;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-70m2-3dormitorios-2vagas/SG9767;6000;ativo;2026-11-22;2026-11-28
+500;Scheid;Scheid Imóveis;MR112867;https://www.scheidimoveis.com.br/imovel/apartamento-para-alugar-sao-paulo-jardim-marajoara-83m2-3dormitorios-2vagas/MR112867;5700;ativo;2026-11-22;2026-11-28
+402;ZAP Imóveis;RUMO SUL IMÓVEIS;26348;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-salao-de-festas-jardim-marajoara-zona-sul-sao-paulo-sp-75m2-id-2921502147/;3800;ativo;2026-11-22;2026-11-28
+174;ZAP Imóveis;RUMO SUL IMÓVEIS;47888;https://www.zapimoveis.com.br/imovel/aluguel-apartamento-2-quartos-com-churrasqueira-jardim-marajoara-zona-sul-sao-paulo-sp-150m2-id-2908296434/;4600;ativo;2026-11-22;2026-11-28
+503;QuintoAndar;QuintoAndar;892916810;https://www.quintoandar.com.br/imovel/892916810;4241;ativo;2026-11-28;2026-11-28
+506;QuintoAndar;QuintoAndar;893021355;https://www.quintoandar.com.br/imovel/893021355;4500;ativo;2026-11-28;2026-11-28
+507;QuintoAndar;QuintoAndar;893092610;https://www.quintoandar.com.br/imovel/893092610;5400;ativo;2026-11-28;2026-11-28
+508;QuintoAndar;QuintoAndar;893182644;https://www.quintoandar.com.br/imovel/893182644;4000;ativo;2026-11-28;2026-11-28
+509;QuintoAndar;QuintoAndar;893418763;https://www.quintoandar.com.br/imovel/893418763;4500;ativo;2026-11-28;2026-11-28
+510;QuintoAndar;QuintoAndar;893464803;https://www.quintoandar.com.br/imovel/893464803;5000;ativo;2026-11-28;2026-11-28
+511;QuintoAndar;QuintoAndar;893508614;https://www.quintoandar.com.br/imovel/893508614;5200;ativo;2026-11-28;2026-11-28
+512;QuintoAndar;QuintoAndar;893963902;https://www.quintoandar.com.br/imovel/893963902;3500;ativo;2026-11-28;2026-11-28
+514;QuintoAndar;QuintoAndar;894488970;https://www.quintoandar.com.br/imovel/894488970;5259;ativo;2026-11-28;2026-11-28
+515;QuintoAndar;QuintoAndar;894884198;https://www.quintoandar.com.br/imovel/894884198;5140;ativo;2026-11-28;2026-11-28
+516;QuintoAndar;QuintoAndar;895111078;https://www.quintoandar.com.br/imovel/895111078;4690;ativo;2026-11-28;2026-11-28
+57;QuintoAndar;QuintoAndar;895347143;https://www.quintoandar.com.br/imovel/895347143;3690;ativo;2026-11-28;2026-11-28
+519;QuintoAndar;QuintoAndar;895385216;https://www.quintoandar.com.br/imovel/895385216;5850;ativo;2026-11-28;2026-11-28
+57;QuintoAndar;QuintoAndar;895408093;https://www.quintoandar.com.br/imovel/895408093;3700;ativo;2026-11-28;2026-11-28
+520;QuintoAndar;QuintoAndar;895502805;https://www.quintoandar.com.br/imovel/895502805;3800;ativo;2026-11-28;2026-11-28
+521;QuintoAndar;QuintoAndar;895536341;https://www.quintoandar.com.br/imovel/895536341;5000;ativo;2026-11-28;2026-11-28
+523;QuintoAndar;QuintoAndar;895582792;https://www.quintoandar.com.br/imovel/895582792;3900;ativo;2026-11-28;2026-11-28
+524;QuintoAndar;QuintoAndar;895606575;https://www.quintoandar.com.br/imovel/895606575;4400;ativo;2026-11-28;2026-11-28
+525;QuintoAndar;QuintoAndar;895614484;https://www.quintoandar.com.br/imovel/895614484;5800;ativo;2026-11-28;2026-11-28
+526;QuintoAndar;QuintoAndar;895670415;https://www.quintoandar.com.br/imovel/895670415;3770;ativo;2026-11-28;2026-11-28
+527;QuintoAndar;QuintoAndar;895702175;https://www.quintoandar.com.br/imovel/895702175;4000;ativo;2026-11-28;2026-11-28
+528;QuintoAndar;QuintoAndar;895766099;https://www.quintoandar.com.br/imovel/895766099;3400;ativo;2026-11-28;2026-11-28
+529;QuintoAndar;QuintoAndar;895841839;https://www.quintoandar.com.br/imovel/895841839;5700;ativo;2026-11-28;2026-11-28
+530;QuintoAndar;QuintoAndar;895855680;https://www.quintoandar.com.br/imovel/895855680;4200;ativo;2026-11-28;2026-11-28
+534;QuintoAndar;QuintoAndar;895876186;https://www.quintoandar.com.br/imovel/895876186;6250;ativo;2026-11-28;2026-11-28
+536;QuintoAndar;QuintoAndar;895880996;https://www.quintoandar.com.br/imovel/895880996;5500;ativo;2026-11-28;2026-11-28
+537;QuintoAndar;QuintoAndar;895883165;https://www.quintoandar.com.br/imovel/895883165;4000;ativo;2026-11-28;2026-11-28
+538;Imovelweb;SPAZIO C IMOVEIS;AP009216;https://www.imovelweb.com.br/propriedades/jardim-guanabara-apartamento-para-locacao-2945777250.html;6200;ativo;2026-11-28;2026-11-28
+539;Imovelweb;ELOHIM IMÓVEIS;162830;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-na-vila-mascote-pacote-2958088202.html;4000;ativo;2026-11-28;2026-11-28
+540;Imovelweb;ELOHIM IMÓVEIS;162898;https://www.imovelweb.com.br/propriedades/lindo-apartamento-para-locacao-no-jardim-prudencia.-2959456628.html;4900;ativo;2026-11-28;2026-11-28
+541;Imovelweb;Vieira Imóveis;2249;https://www.imovelweb.com.br/propriedades/apto-novinho!-repleto-de-armarios-otimo-lazer-2963558165.html;3450;ativo;2026-11-28;2026-11-28
+542;Imovelweb;FIVE IMOVEIS;AP2637;https://www.imovelweb.com.br/propriedades/apartamento-com-3-dormitorios-75-m-venda-por-r$-2963900634.html;4000;ativo;2026-11-28;2026-11-28
+543;Imovelweb;Imóveis Exclusivos - 3547 J;AP3702;https://www.imovelweb.com.br/propriedades/apartamento-2-quartos-para-locacao-no-santo-inacio-2974515831.html;4900;ativo;2026-11-28;2026-11-28
+545;Imovelweb;JG IMÓVEIS;AP00488;https://www.imovelweb.com.br/propriedades/apartamento-jardim-brasil-zona-sul-2976161320.html;5300;ativo;2026-11-28;2026-11-28
+546;Imovelweb;ELOHIM IMÓVEIS;164046;https://www.imovelweb.com.br/propriedades/apartamento-para-venda-ou-locacao-no-bairro-vila-2992653472.html;5000;ativo;2026-11-28;2026-11-28
+547;Imovelweb;JUNIOR IMOVEIS;163FM78;https://www.imovelweb.com.br/propriedades/amplo-otima-localizacao-novo-2995166021.html;5000;ativo;2026-11-28;2026-11-28
+548;Imovelweb;ELOHIM IMÓVEIS;163913;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-ou-venda-no-bairro-vila-2999644152.html;3500;ativo;2026-11-28;2026-11-28
+549;Imovelweb;Conexao x consultoria imobiliaria;AP018812;https://www.imovelweb.com.br/propriedades/apartamento-a-venda-e-para-aluguel-em-taquaral-3005140772.html;5800;ativo;2026-11-28;2026-11-28
+550;Imovelweb;ELOHIM IMÓVEIS;164096;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-ou-venda-no-bairro-vila-3009119833.html;3100;ativo;2026-11-28;2026-11-28
+551;Imovelweb;Giacomelli Corretora de Imóveis;1734-L;https://www.imovelweb.com.br/propriedades/venda-apartamento-89m2-2-dormitorios-sendo-uma-suite-3010106933.html;4500;ativo;2026-11-28;2026-11-28
+552;Imovelweb;Giacomelli Corretora de Imóveis;1736-L;https://www.imovelweb.com.br/propriedades/89m2-varanda-gourmet-lazer-completo-3010189576.html;5500;ativo;2026-11-28;2026-11-28
+310;Imovelweb;ADRIANO SILVA IMÓVEIS;AB9532;https://www.imovelweb.com.br/propriedades/apartamento-na-regiao-de-chacara-santo-antonio-3014200968.html;4400;ativo;2026-11-28;2026-11-28
+554;Imovelweb;ROFE IMÓVEIS;RF37605;https://www.imovelweb.com.br/propriedades/apartamento-com-2-dormitorios-a-venda-68-m-por-r$-3016204776.html;5600;ativo;2026-11-28;2026-11-28
+555;Imovelweb;Gonçalves & Moreira Imóveis;AP00508;https://www.imovelweb.com.br/propriedades/apartamento-vila-sofia-3020743192.html;5000;ativo;2026-11-28;2026-11-28
+261;Imovelweb;ELOHIM IMÓVEIS;164266;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-no-jardim-prudencia-3024143463.html;5650;ativo;2026-11-28;2026-11-28
+557;Imovelweb;GR PRIME ADMINISTRACAO IMOVEIS;GR0112;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-em-sao-paulo-sp-2-dorm.-69-3027402899.html;4700;ativo;2026-11-28;2026-11-28
+558;Imovelweb;PASCAL IMÓVEIS LTDA.;249553;https://www.imovelweb.com.br/propriedades/apartamento-vila-sofia-3-dormitorios-2-vagas-3029800694.html;5000;ativo;2026-11-28;2026-11-28
+559;Imovelweb;ELOHIM IMÓVEIS;164319;https://www.imovelweb.com.br/propriedades/apartamento-pra-locacao-vila-mascote-3029833323.html;3400;ativo;2026-11-28;2026-11-28
+560;Imovelweb;GR PRIME ADMINISTRACAO IMOVEIS;GR0122;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-em-sao-paulo-sp-2-dorm.-75-3029992055.html;4300;ativo;2026-11-28;2026-11-28
+561;Imovelweb;ELOHIM IMÓVEIS;164368;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-jardim-prudencia-3030725757.html;4000;ativo;2026-11-28;2026-11-28
+562;Imovelweb;Nivaldo Calado Consultor Imobiliario;1291;https://www.imovelweb.com.br/propriedades/apartamento-venda-e-ou-locacao-vila-cruzeiro-3030861900.html;5000;ativo;2026-11-28;2026-11-28
+564;Imovelweb;ZARIF IMOVEIS;ZZALFGJ46;https://www.imovelweb.com.br/propriedades/apartamento-para-alugar-com-2-quartos-e-2-vagas-na-3031988531.html;5700;ativo;2026-11-28;2026-11-28
+99;Imovelweb;MICHAEL PAJAK - 111478-F;MP27167;https://www.imovelweb.com.br/propriedades/apartamento-tipo-para-venda-michael-pajak-11-9666-3032818832.html;5000;ativo;2026-11-28;2026-11-28
+165;Imovelweb;M&E imóveis;00002;https://www.imovelweb.com.br/propriedades/oportunidade!!!-apartamento-para-locacao-de-70m2-3035077558.html;3900;ativo;2026-11-28;2026-11-28
+566;Imovelweb;RUMO SUL IMÓVEIS;47554;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3035178738.html;3700;ativo;2026-11-28;2026-11-28
+567;Imovelweb;Forte Prime Imóveis;23037;https://www.imovelweb.com.br/propriedades/apartamento-com-2-quartos-campo-belo-sao-paulo-3035759002.html;3800;ativo;2026-11-28;2026-11-28
+165;Imovelweb;Paulo Roberto Leardi;834438;https://www.imovelweb.com.br/propriedades/imoveis-no-jardim-prudencia-3038351774.html;5000;ativo;2026-11-28;2026-11-28
+165;Imovelweb;Pool Imóveis Guru;834438;https://www.imovelweb.com.br/propriedades/imoveis-no-jardim-prudencia-3038353328.html;5000;ativo;2026-11-28;2026-11-28
+568;Imovelweb;Flow Imóveis;FL1766839;https://www.imovelweb.com.br/propriedades/apartamento-para-venda-em-chacara-santo-antonio-com-4-3038520206.html;6000;ativo;2026-11-28;2026-11-28
+523;Imovelweb;Maria - Corretora;452NBFD;https://www.imovelweb.com.br/propriedades/apartamento-02-dormitorios-01-suite-01-vaga-de-garagem-3039751363.html;4700;ativo;2026-11-28;2026-11-28
+569;Imovelweb;Booki negócios imobiliários;AP3610;https://www.imovelweb.com.br/propriedades/oportunidade-ventura-jardim-prudencia-68-m-3039788521.html;5000;ativo;2026-11-28;2026-11-28
+570;Imovelweb;Trato Soluções Imobiliárias;AP304319;https://www.imovelweb.com.br/propriedades/apartamento-de-3-suites-para-locacao-no-parque-prado-3040675079.html;5500;ativo;2026-11-28;2026-11-28
+571;Imovelweb;Imobiliaria Facility;AP019167;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-em-parque-prado-3041463410.html;3800;ativo;2026-11-28;2026-11-28
+165;Imovelweb;M&E imóveis;00033;https://www.imovelweb.com.br/propriedades/excelente-apartamento-com-70-m2-para-locacao-em-jardim-3042134129.html;3900;ativo;2026-11-28;2026-11-28
+572;Imovelweb;Serva Imóveis;brunaeficaz#RS8PJ;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-em-jardim-prudencia-com-2-3042485841.html;5600;ativo;2026-11-28;2026-11-28
+574;Imovelweb;DreamCasa;AP6047279-FR;https://www.imovelweb.com.br/propriedades/apartamento-em-vila-sofia-sao-paulo-sp-de-80m-2-3042671835.html;3800;ativo;2026-11-28;2026-11-28
+575;Imovelweb;RE/MAX ATRIO;601361019-3329;https://www.imovelweb.com.br/propriedades/apartamento-113metros-com-3-dorm-1-suite-1-vaga-3042768005.html;4000;ativo;2026-11-28;2026-11-28
+103;Imovelweb;M&E imóveis;00045;https://www.imovelweb.com.br/propriedades/apartamento-para-alugar-70-m2-em-jardim-prudencia-3043479689.html;4600;ativo;2026-11-28;2026-11-28
+576;Imovelweb;Edson Campanhã. Marajoara Imóveis.;AP06824;https://www.imovelweb.com.br/propriedades/apartamento-de-82-m-com-3-quartos-a-venda-e-aluguel-3043643191.html;4900;ativo;2026-11-28;2026-11-28
+577;Imovelweb;CORRETORA DE IMOVEIS TRANQUILIDADE;AP1610;https://www.imovelweb.com.br/propriedades/apartamento-com-2-dormitorios-para-alugar-74-m-por-3044012432.html;5000;ativo;2026-11-28;2026-11-28
+579;Imovelweb;Europa Real Estate Imóveis;GLQA13;https://www.imovelweb.com.br/propriedades/apartamento-para-alugar-com-81m-2-quartos-e-1-vaga-3046878079.html;5500;ativo;2026-11-28;2026-11-28
+580;Imovelweb;SPO Imóveis;SP5364;https://www.imovelweb.com.br/propriedades/cond-nova-escocia-apto-de-3-quartos-para-locacao-no-3046972240.html;3650;ativo;2026-11-28;2026-11-28
+581;Imovelweb;M&E imóveis;00075;https://www.imovelweb.com.br/propriedades/oportunidade!!!-apartamento-para-locacao-em-jardim-3047010467.html;4200;ativo;2026-11-28;2026-11-28
+411;Imovelweb;RUMO SUL IMÓVEIS;47994;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-alto-da-boa-vista-3047202357.html;3500;ativo;2026-11-28;2026-11-28
+170;Imovelweb;RUMO SUL IMÓVEIS;47992;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-prudencia-3047202399.html;5000;ativo;2026-11-28;2026-11-28
+583;Imovelweb;BEG IMOVEIS;AP102401;https://www.imovelweb.com.br/propriedades/apartamento-130-m-venda-por-r$-1.400.000-00-ou-3047257618.html;5000;ativo;2026-11-28;2026-11-28
+584;Imovelweb;LOPES URBAN - 2;REO1060629;https://www.imovelweb.com.br/propriedades/imoveis-no-jardim-prudencia-3047321140.html;6000;ativo;2026-11-28;2026-11-28
+586;Imovelweb;M&E imóveis;00088;https://www.imovelweb.com.br/propriedades/oportunidade!!!-apartamento-para-locacao-72-m2-no-3047689275.html;4800;ativo;2026-11-28;2026-11-28
+588;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA6005;https://www.imovelweb.com.br/propriedades/apartamento-c-varanda-gourmet-2-dorms-1-suite-2-3048612826.html;4300;ativo;2026-11-28;2026-11-28
+589;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA5920;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-77m-2-dorms-1-suite-3048612828.html;4800;ativo;2026-11-28;2026-11-28
+590;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA5818;https://www.imovelweb.com.br/propriedades/apartamento-locacao-no-condominio-ventura-2-vagas-de-3048612894.html;5500;ativo;2026-11-28;2026-11-28
+591;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA6048;https://www.imovelweb.com.br/propriedades/apartamento-locacao-com-varanda-gourmet-no-condominio-3048612948.html;5500;ativo;2026-11-28;2026-11-28
+592;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA6032;https://www.imovelweb.com.br/propriedades/apartament-com-vista-para-o-verde-no-jardim-marajoara-3049141844.html;3100;ativo;2026-11-28;2026-11-28
+310;Imovelweb;Paulo Roberto Leardi;841442;https://www.imovelweb.com.br/propriedades/imoveis-na-chacara-santo-antonio-3049258620.html;4400;ativo;2026-11-28;2026-11-28
+593;Imovelweb;Scheid Prime;BV17769;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-granja-julieta-95m-com-3049357097.html;4500;ativo;2026-11-28;2026-11-28
+595;Imovelweb;Casadois Consultoria Imobiliaria;AP1026016;https://www.imovelweb.com.br/propriedades/vila-mascote-locacao-126-m-3-quartos-e-2-vagas-3049367644.html;3800;ativo;2026-11-28;2026-11-28
+596;Imovelweb;Imóveis PRO - CRECI 28.161-J;IP38265;https://www.imovelweb.com.br/propriedades/apartamento-vila-sofia-sao-paulo-3049595105.html;4000;ativo;2026-11-28;2026-11-28
+597;Imovelweb;Valéria Costa Gestão e Administração de Imóveis;VC3779;https://www.imovelweb.com.br/propriedades/apartamento-para-alugar-na-chacara-santo-antonio-sao-3050060304.html;4400;ativo;2026-11-28;2026-11-28
+165;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA6088;https://www.imovelweb.com.br/propriedades/apartamento-c-varanda-gourmet-espaco-gril-2-dorms-1-3050076167.html;3900;ativo;2026-11-28;2026-11-28
+209;Imovelweb;Abyara;AP1171;https://www.imovelweb.com.br/propriedades/apartamento-a-venda-ou-para-locacao-no-condominio-3050377079.html;3450;ativo;2026-11-28;2026-11-28
+599;Imovelweb;Moraes Reis Imóveis;AP7289;https://www.imovelweb.com.br/propriedades/apartamento-a-venda-e-locacao-3-quartos-1-suite-2-3050385055.html;5000;ativo;2026-11-28;2026-11-28
+165;Imovelweb;FERREIRA ARAÚJO CORRETORES ASSOCIADOS - NEGÓCIOS IMOBILIÁRIOS;FA6100;https://www.imovelweb.com.br/propriedades/oportunidade!-apartamento-locacao-no-condominio-3050616710.html;5000;ativo;2026-11-28;2026-11-28
+424;Imovelweb;RUMO SUL IMÓVEIS;47937;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-prudencia-3050835803.html;4800;ativo;2026-11-28;2026-11-28
+601;Imovelweb;J SCOTT IMOVEIS;JS1425;https://www.imovelweb.com.br/propriedades/apartamento-com-3-dormitorios-mobiliado-para-locacao-3050883072.html;4900;ativo;2026-11-28;2026-11-28
+602;Imovelweb;J SCOTT IMOVEIS;JS1069;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-3-quartos-2-vagas-vila-sofia-3050883084.html;4900;ativo;2026-11-28;2026-11-28
+603;Imovelweb;J SCOTT IMOVEIS;JS1349;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-na-rua-socrates-3-quartos-3050883613.html;5200;ativo;2026-11-28;2026-11-28
+395;Imovelweb;RUMO SUL IMÓVEIS;48122;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3050919098.html;5500;ativo;2026-11-28;2026-11-28
+604;Imovelweb;FIVE IMOVEIS;AP6980;https://www.imovelweb.com.br/propriedades/apartamento-com-3-dormitorios-para-alugar-69-m-por-3051331943.html;3600;ativo;2026-11-28;2026-11-28
+605;Imovelweb;DreamCasa;AP6240348-FR;https://www.imovelweb.com.br/propriedades/apartamento-em-vila-sofia-sao-paulo-sp-de-75m-2-3051381217.html;3600;ativo;2026-11-28;2026-11-28
+607;Imovelweb;JRCA IMÓVEIS;AN687-JRCA;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-em-sao-paulo-jardim-3051483656.html;4500;ativo;2026-11-28;2026-11-28
+608;Imovelweb;NOVA SOLAR EMPREEND. IMOBIL. S/S LTDA.;5322;https://www.imovelweb.com.br/propriedades/apartamento-residencial-de-84-m-para-aluguel-na-vila-3051582464.html;5000;ativo;2026-11-28;2026-11-28
+608;Imovelweb;NOVA SOLAR EMPREEND. IMOBIL. S/S LTDA.;5733;https://www.imovelweb.com.br/propriedades/apartamento-residencial-de-3-quartos-para-alugar-na-3051582516.html;4500;ativo;2026-11-28;2026-11-28
+609;Imovelweb;Imobiliária Time;AP2163;https://www.imovelweb.com.br/propriedades/apartamento-com-3-quartos-para-alugar-78-m-por-r$-3051645530.html;4500;ativo;2026-11-28;2026-11-28
+610;Imovelweb;RE/MAX CLASSIQUE;602031046-2;https://www.imovelweb.com.br/propriedades/apartamento-de-105-m-no-paraiso-espaco-e-3051863755.html;4900;ativo;2026-11-28;2026-11-28
+611;Imovelweb;Ivanor Jose de Tassis Filho;2042;https://www.imovelweb.com.br/propriedades/apartamento-para-alugar-no-jardim-prudencia!-3052011878.html;3490;ativo;2026-11-28;2026-11-28
+612;Imovelweb;THE PLACE IMOVEIS - INTEGRAÇÃO;AP-99893;https://www.imovelweb.com.br/propriedades/apartamento-no-jardim-prudencia-com-2-quartos-1-3052071423.html;5000;ativo;2026-11-28;2026-11-28
+614;Imovelweb;J SCOTT IMOVEIS;JS1540;https://www.imovelweb.com.br/propriedades/apartamento-para-locacao-na-vila-sofia-2-suites-2-3052154690.html;5000;ativo;2026-11-28;2026-11-28
+615;Imovelweb;LGNIMOVEIS;DCORVC251126;https://www.imovelweb.com.br/propriedades/amplo-apartamento-com-3-dormitorios-e-uma-suite-na-3052203447.html;4000;ativo;2026-11-28;2026-11-28
+616;Imovelweb;RUMO SUL IMÓVEIS;42159;https://www.imovelweb.com.br/propriedades/apartamento-para-aluguel-no-jardim-marajoara-3052203449.html;5000;ativo;2026-11-28;2026-11-28
+617;Imovelweb;RE/MAX ATRIO;601361020-514;https://www.imovelweb.com.br/propriedades/apartamento-com-2-dormitorios-1-suite-e-lazer-3052305186.html;3300;ativo;2026-11-28;2026-11-28
+618;Imovelweb;RE/MAX ATRIO;601361020-520;https://www.imovelweb.com.br/propriedades/apartamento-de-70-m-com-2-vagas-varanda-envidracada-3052305193.html;4300;ativo;2026-11-28;2026-11-28
+619;Imovelweb;BALUARTE IMOVEIS;BI26715;https://www.imovelweb.com.br/propriedades/apartamento-3-dormitorios-para-locacao-rua-socrates-3052308133.html;3500;ativo;2026-11-28;2026-11-28
+622;Imovelweb;ALK NEGOCIOS IMOBILIARIOS;AK56314;https://www.imovelweb.com.br/propriedades/apartamento-com-3-dormitorios-para-alugar-70m-vila-3052391092.html;3600;ativo;2026-11-28;2026-11-28
+623;Imovelweb;IMOBILIÁRIA BARRETO JUNDIAÍ;L90486;https://www.imovelweb.com.br/propriedades/apartamento-para-venda-e-locacao-no-condominio-3052450249.html;3500;ativo;2026-11-28;2026-11-28
+624;Imovelweb;Marajoara Imóveis;MAP14529537;https://www.imovelweb.com.br/propriedades/apartamento-3-dormitorios-para-alugar-no-ilhas-do-3052455125.html;3600;ativo;2026-11-28;2026-11-28
+625;Imovelweb;IMOBILIARIA AGUIAR VALINHOS;AP010424;https://www.imovelweb.com.br/propriedades/apto-lux-residence-para-alugar-3052539270.html;5500;ativo;2026-11-28;2026-11-28

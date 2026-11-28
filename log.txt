@@ -42,3 +42,7 @@
 
 == 2026-11-28. Base v2 ==
 Filtro v2 aprovado. Base v1 arquivada em v1/. Base v2 semeada com 112 imóveis da v1 que passam no filtro (mesmos ids). Colunas novas sala_ampla, ar_condicionado, contas_individualizadas, armarios_cozinha, armarios_banheiro e armarios_quartos.
+2026-11-28 QuintoAndar v2. URL https://www.quintoandar.com.br/alugar/imovel/[bairro]-sao-paulo-sp-brasil/de-4000-a-7600-reais/2-quartos/de-68-a-1000-m2 com ?pagina=N, 11 bairros. 3168 cards vistos, 90 abertos, 56 novos antes do filtro fino.
+2026-11-28 Imovelweb v2. URL https://www.imovelweb.com.br/apartamentos-aluguel-[slug]-mais-de-2-quartos(-pagina-N).html, 11 bairros. Anúncios do QuintoAndar repostados no Imovelweb foram pulados. Anunciante lido do bloco publisher da página e descrição do campo description. 139 abertos, 88 novos antes do filtro fino.
+2026-11-28 ZAP v2. Slugs que funcionam vl-mascote, jd-marajoara, jd-prudencia, campo-belo, brooklin, alto-da-boa-vista, granja-julieta, vl-alexandria, vl-sofia, vl-sta-catarina. O ZAP passou a responder 429 depois de uns 100 anúncios abertos.
+2026-11-28 Segurança da rua. O Erick informou que o chat do front já calcula a segurança. A coleta só garante latitude, longitude e cep.
